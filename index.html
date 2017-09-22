@@ -65,7 +65,7 @@
               <img class="product__img" src="img/bestseller.jpg" alt="Вязаные корзинки">
               <div class="product_buy">
                 <span class="product_price">Цена: 990 руб.</span>
-                <a class="btn product__btn" href="catalog-item.html"></a>
+                <a class="btn product__btn" href="order.html"></a>
               </div>
             </div>
           </div>
@@ -149,6 +149,28 @@
         </div>
       </div>
     </footer>
+
+    <div class="overlay">
+      <section class="order">
+        <h3 class="order__title">Добавить в корзину</h3>
+        <form class="order__form"  action="#" method="post">
+          <span class="order__txt">Выберите размер:</span>
+          <label class="order__label">
+            <input class="order__input" type="radio" value="S" checked>
+            <span class="order__size">S</span>
+          </label>
+          <label class="order__label">
+            <input class="order__input" type="radio" value="M" checked>
+            <span class="order__size">M</span>
+          </label>
+          <label class="order__label">
+            <input class="order__input" type="radio" value="L" checked>
+            <span class="order__size">L</span>
+          </label>
+          <button class="btn order__btn" type="submit">Добавить</button>
+        </form>
+      </section>
+    </div>
 
   </body>
 </html>
