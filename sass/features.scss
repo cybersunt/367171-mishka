@@ -1,0 +1,8 @@
+.features__title {
+  @include text-decoration ($font-size: 25px, $line-height: 30px);
+}
+
+.features__list {
+  @include list-reset;
+  @include text-decoration ($line-height: 20px);
+}
