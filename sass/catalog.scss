@@ -1,1 +1,5 @@
 @import "goods.scss";
+
+.catalog__list {
+  @include list-reset;
+}

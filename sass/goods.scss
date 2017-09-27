@@ -1,0 +1,30 @@
+.goods__link {
+  @include link-reset;
+  @include text-decoration;
+
+  &:visited {
+    @include link-visited;
+  }
+
+  &:hover {
+    @include link-hover;
+  }
+
+  &:focus {
+    @include link-hover;
+  }
+
+  &:active {
+    @include link-active;
+  }
+
+}
+
+.goods__info {
+  font-size: 13px;
+}
+
+.goods__price {
+  line-height: 24px;
+  font-weight: 700;
+}
