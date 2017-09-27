@@ -4,3 +4,19 @@
   line-height: 30px;
   color: #444444;
 }
+
+.inner-page__title {
+  font-size: 27px;
+}
+
+.inner-page__name {
+  background-color: #f1f1f1;
+}
+
+.inner-page__name--index {
+  background-image: url('../img/hero-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  height: 373px;
+}
