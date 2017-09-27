@@ -1,3 +1,75 @@
 @import "form-type.scss";
 @import "form-color.scss";
 @import "form-contacts.scss";
+
+.order__fieldset {
+  @include int-indents-reset;
+  border: 0;
+}
+
+.order__title {
+  @include text-decoration($color: #63d1bb, $line-height: 16px);
+  text-transform: uppercase;
+}
+
+.order__subtitle {
+  @include text-decoration ($line-height: 18px);
+}
+
+.order__input {
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.302);
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: #62d1ba;
+
+    &::placeholder {
+      color: rgba(68, 68, 68, 0.302);
+    }
+  }
+
+  &:active {
+    color: #444444;
+    outline: 0;
+    border-color: #62d1ba;
+  }
+
+}
+
+.order__textarea {
+  border: 2px solid #444444;
+
+  &::placeholder {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.302);
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: #62d1ba;
+
+    &::placeholder {
+      color: rgba(68, 68, 68, 0.302);
+    }
+  }
+
+  &:active {
+    color: #444444;
+    outline: 0;
+    border-color: #62d1ba;
+  }
+}
+
+.order__comment {
+  font-size: 14px;
+}
