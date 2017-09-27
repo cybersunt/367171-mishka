@@ -1,7 +1,37 @@
-$list-reset {
-  list-style: none;
+@mixin list-reset {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
 }
 
-$link-reset {
+@mixin out-indents-reset {
+  margin: 0;
+}
+
+@mixin int-indents-reset {
+  padding: 0;
+}
+
+@mixin text-decoration ($color: #000000, $font-size: 17px, $line-height: 24px, $font-weight: 700) {
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin link-reset {
   text-decoration: none;
+}
+
+@mixin link-hover {
+  color: #8d8d8d;
+}
+
+@mixin link-active ($color: #cacaca) {
+  color: $color;
+}
+
+@mixin link-visited ($color: #000000) {
+  color: $color;
 }
