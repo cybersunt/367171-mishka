@@ -1,0 +1,11 @@
+.video__title {
+  @include text-decoration;
+}
+
+.video__text {
+  font-size: 13px;
+}
+
+.video__btn {
+  @include text-decoration ($font-size: 17px, $line-height: 16px);
+}
