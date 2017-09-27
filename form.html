@@ -8,7 +8,7 @@
   <body class="inner-page">
 
     <header class="header">
-      <div class="header__wrap">
+      <div class="header__wrap inner-page__wrap">
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <a class="main-nav__logo" href="/">
@@ -21,11 +21,11 @@
             <li class="menu-list__item menu-list__item--hidden"><a class="menu-list__link" href="#">Распродажа</a></li>
           </ul>
           <ul class="main-nav__list user-list">
-            <li class="user-item">
-              <a class="user-link" href="#">Поиск по сайту</a>
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="user-item">
-              <a class="user-link" href="#">Корзина: пока пуста</a>
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </nav>
@@ -33,7 +33,7 @@
     </header>
 
     <main class="main">
-      <div class="main__wrap">
+      <div class="main__wrap inner-page__wrap">
         <div class="inner-page__name">
           <h1 class="inner-page__title main__title">Вязание на заказ</h1>
         </div>
@@ -44,9 +44,9 @@
             <legend class="order__title form-type__title">Тип</legend>
 
             <input class="order__radio form-type__input" name="type" type="radio" id="type-1" value="type-1" checked>
-            <label for="type-1" class="form-type__label">Аксессуар для интерьера</label>
+            <label for="type-1" class="order__subtitle form-type__label">Аксессуар для интерьера</label>
             <input class="order__radio form-type__input" name="type" type="radio" id="type-2" value="type-2">
-            <label for="type-2" class="form-type__label">Детская игрушка</label>
+            <label for="type-2" class="order__subtitle form-type__label">Детская игрушка</label>
 
           </fieldset>
 
@@ -54,17 +54,17 @@
             <legend class="order__title form-color__title">Цвет</legend>
 
             <input class="order__checkbox form-color__input" name="white" id="white" type="checkbox" checked>
-            <label for="white" class="form-color__label">Белый</label>
+            <label for="white" class="order__subtitle form-color__label">Белый</label>
             <input class="order__checkbox form-color__input" name="gray" id="gray" type="checkbox" checked>
-            <label for="gray" class="form-color__label">Серый</label>
+            <label for="gray" class="order__subtitle form-color__label">Серый</label>
             <input class="order__checkbox form-color__input" name="tiffany" id="tiffany" type="checkbox">
-            <label for="tiffany" class="form-color__label">«Тиффани»</label>
+            <label for="tiffany" class="order__subtitle form-color__label">«Тиффани»</label>
             <input class="order__checkbox form-color__input" name="black" id="black" type="checkbox">
-            <label for="black" class="form-color__label">Черный</label>
+            <label for="black" class="order__subtitle form-color__label">Черный</label>
             <input class="order__checkbox form-color__input" name="pink" id="pink" type="checkbox">
-            <label for="pink" class="form-color__label">Розовый</label>
+            <label for="pink" class="order__subtitle form-color__label">Розовый</label>
             <input class="order__checkbox form-color__input" name="orange" id="orange" type="checkbox">
-            <label for="orange" class="form-color__label">Оранжевый</label>
+            <label for="orange" class="order__subtitle form-color__label">Оранжевый</label>
           </fieldset>
 
           <fieldset class="order__fieldset form-contacts">
@@ -98,7 +98,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__wrap">
+      <div class="footer__wrap inner-page__wrap">
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
