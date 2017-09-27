@@ -1,6 +1,7 @@
 .reviews__item {
   @include out-indents-reset;
 }
+
 .reviews__title {
   @include text-decoration ($font-size: 25px, $line-height: 30px);
 }
