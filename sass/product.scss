@@ -1,0 +1,30 @@
+.product__title {
+  @include text-decoration ($font-size: 25px, $line-height: 30px);
+}
+
+.product__label {
+  @include text-decoration ($color: #63d1bb, $line-height: 20px);
+  text-transform: uppercase;
+}
+
+.product__info {
+  @include list-reset;
+}
+
+.product__text {
+  line-height: 24px;
+}
+
+.product__info-item {
+  line-height: 20px;
+}
+
+.product__price {
+  @include text-decoration;
+  display: block;
+  text-align: center;
+}
+
+.product__btn {
+  font-size: 17px;
+}

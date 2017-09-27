@@ -5,3 +5,12 @@
 .production__item--kid-toys {
   background-color: #56c3b2;
 }
+
+.production__link {
+  @include link-reset;
+  @include text-decoration (#ffffff, 19px);
+
+  &:active {
+    @include link-active (#97e2d2);
+  }
+}
