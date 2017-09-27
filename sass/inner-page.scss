@@ -6,7 +6,8 @@
 }
 
 .inner-page__title {
-  font-size: 27px;
+  @include text-decoration (#000000, 27px, 30px, 700);
+  text-align: center;
 }
 
 .inner-page__name {
@@ -16,7 +17,10 @@
 .inner-page__name--index {
   background-image: url('../img/hero-mobile@1x.jpg');
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center 0;
 
   height: 373px;
 }
+
+
+
