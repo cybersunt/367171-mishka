@@ -1,5 +1,5 @@
 .contacts__title {
-  @include text-decoration (#000000, 18px, 30px, 700)
+  @include text-decoration (#000000, 18px, 30px, 700);
 }
 
 .contacts__info-desc--mail {
@@ -21,7 +21,7 @@
   }
 
   &:active {
-    border-color: rgba(70, 193, 174, 0.30);
-    color: rgba(70, 193, 174, 0.30);
+    border-color: rgba(70, 193, 174, 0.3);
+    color: rgba(70, 193, 174, 0.3);
     }
 }
