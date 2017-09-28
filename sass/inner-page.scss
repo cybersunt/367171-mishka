@@ -15,7 +15,9 @@
 }
 
 .inner-page__title {
-  @include text-decoration (#000000, 27px, 30px, 700);
+  @include text-size(27px, 30px);
+  @include text-color;
+  font-weight: 700;
   text-align: center;
   margin-top: 0;
 }
@@ -27,6 +29,7 @@
 .inner-page__name {
   @include wrapper;
   background-color: #f1f1f1;
+
   min-height: 175px;
   margin-bottom: 30px;
 }

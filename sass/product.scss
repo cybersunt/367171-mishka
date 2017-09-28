@@ -1,9 +1,11 @@
 .product__title {
-  @include text-decoration ($font-size: 25px, $line-height: 30px);
+  @include text-size (25px, 30px);
 }
 
 .product__label {
-  @include text-decoration ($color: #63d1bb, $line-height: 20px);
+  @include text-size (17px, 20px);
+  @include text-color (#63d1bb);
+  font-weight: 700;
   text-transform: uppercase;
 }
 

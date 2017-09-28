@@ -15,7 +15,9 @@
 
 .production__link {
   @include link-reset;
-  @include text-decoration (#ffffff, 19px);
+  @include text-size (19px, 30px);
+  @include text-color (#ffffff);
+  font-weight: 700;
 
   &:active {
     @include link-active (#97e2d2);

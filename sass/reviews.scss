@@ -7,11 +7,15 @@
 }
 
 .reviews__title {
-  @include text-decoration ($font-size: 25px, $line-height: 30px);
+  @include text-size (25px, 30px);
+  @include text-color;
+  font-weight: 700;
 }
 
 .reviews__author-name {
-  @include text-decoration ($line-height: 24px);
+  @include text-size (17px, 24px);
+  @include text-color;
+  font-weight: 700;
 }
 
 .reviews__author-nickname {
