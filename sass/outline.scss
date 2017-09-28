@@ -1,0 +1,168 @@
+// Миксины для временного файла outline, отключаются вместе с файлом
+@mixin box-shadow($color) {
+  position: relative;
+  box-shadow: 0 0 0 3px $color;
+}
+
+@mixin before($color) {
+  background: $color;
+  top: auto;
+  bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  position: absolute;
+}
+
+.header {
+  @include box-shadow(#008000);
+
+  &::before {
+    content: ".header";
+    @include before(#008000);
+  }
+}
+
+.main-nav {
+  @include box-shadow(#ff2d52);
+
+  &::before {
+    content: ".main-nav";
+    @include before (#ff2d52);
+  }
+}
+
+.inner-page__wrap {
+  @include box-shadow(#008000);
+
+  &::before {
+    content: ".inner-page__wrap";
+    @include before(#008000);
+  }
+}
+
+.inner-page__name--index {
+  @include box-shadow(#272cfd);
+
+  &::before {
+    content: ".inner-page__name--index";
+    @include before(#272cfd);
+  }
+}
+
+.production {
+  @include box-shadow(#ff2d52);
+
+  &::before {
+    content: ".production";
+    @include before(#ff2d52);
+  }
+}
+
+.production__list {
+  @include box-shadow(#272cfd);
+
+  &::before {
+    content: ".production__list";
+    @include before(#272cfd);
+  }
+}
+
+.product {
+  @include box-shadow(#272cfd);
+
+  &::before {
+    content: ".product";
+    @include before(#272cfd);
+  }
+}
+
+.features {
+  @include box-shadow(#ff2d52);
+
+  &::before {
+    content: ".features";
+    @include before(#ff2d52);
+  }
+}
+
+.reviews {
+  @include box-shadow(#ff2d52);
+
+  &::before {
+    content: ".reviews";
+    @include before(#ff2d52);
+  }
+}
+
+.contacts {
+  @include box-shadow(#ff2d52);
+
+  &::before {
+    content: ".contacts";
+    @include before(#ff2d52);
+  }
+}
+
+.footer {
+  @include box-shadow(#ff2d52);
+
+  &::before {
+    content: ".footer";
+    @include before(#ff2d52);
+  }
+}
+
+.social {
+  @include box-shadow(#272cfd);
+
+  &::before {
+    content: ".social";
+    @include before(#272cfd);
+  }
+}
+
+.add-to-cart {
+  @include box-shadow(#008000);
+
+  &::before {
+    content: ".add-to-cart";
+    @include before(#008000);
+  }
+}
+
+.catalog {
+  @include box-shadow(#ff2d52);
+
+  &::before {
+    content: ".catalog";
+    @include before(#ff2d52);
+  }
+}
+
+.video {
+  @include box-shadow(#ff2d52);
+
+  &::before {
+    content: ".video";
+    @include before(#ff2d52);
+  }
+}
+
+.order {
+  @include box-shadow(#ff2d52);
+
+  &::before {
+    content: ".order";
+    @include before(#ff2d52);
+  }
+}
+
+.order__fieldset {
+  @include box-shadow(#272cfd);
+
+  &::before {
+    content: ".order__fieldset";
+    @include before(#272cfd);
+  }
+}
