@@ -1,0 +1,32 @@
+.product__title {
+  @include text-size (25px, 30px);
+}
+
+.product__label {
+  @include text-size (17px, 20px);
+  @include text-color (#63d1bb);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product__info {
+  @include list-reset;
+}
+
+.product__text {
+  line-height: 24px;
+}
+
+.product__info-item {
+  line-height: 20px;
+}
+
+.product__price {
+  @include text-decoration;
+  display: block;
+  text-align: center;
+}
+
+.product__btn {
+  font-size: 17px;
+}

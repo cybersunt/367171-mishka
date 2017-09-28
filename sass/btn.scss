@@ -1,0 +1,35 @@
+.btn {
+  @include link-reset;
+  @include text-size (18px, 20px);
+  @include text-color (#444444);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  padding: 10px;
+
+  display: block;
+  text-align: center;
+  width: auto;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  border: 2px solid #444444;
+
+  &:visited {
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:focus {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
+}

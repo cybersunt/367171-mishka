@@ -1,0 +1,54 @@
+// Сбрасывание стилей
+@mixin list-reset {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+@mixin out-indents-reset {
+  margin: 0;
+}
+
+@mixin int-indents-reset {
+  padding: 0;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+}
+
+// Миксины с заданными значениями
+@mixin text-decoration {
+  color: #000000;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+@mixin link-hover {
+  color: #8d8d8d;
+}
+
+@mixin wrapper {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+// Миксины с переменными
+@mixin text-color ($color: #000000) {
+  color: $color;
+}
+
+@mixin link-active ($color: #cacaca) {
+  color: $color;
+}
+
+@mixin link-visited ($color: #000000) {
+  color: $color;
+}
+
+@mixin text-size ($font-size: 17px, $line-height: 24px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}

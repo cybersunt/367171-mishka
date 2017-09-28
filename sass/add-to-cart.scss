@@ -1,0 +1,24 @@
+.add-to-cart__title {
+  @include text-size (25px, 30px);
+  @include text-color;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.add-to-cart__text {
+  display: block;
+  text-align: center;
+}
+
+.add-to-cart__value {
+  @include text-size (17px, 16px);
+  @include text-color;
+  font-weight: 700;
+}
+
+.add-to-cart__btn {
+  color: #ffffff;
+  background-color: #63d1bb;
+  border: 0;
+}

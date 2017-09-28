@@ -1,0 +1,6 @@
+@import "menu-list.scss";
+@import "user-list.scss";
+
+.main-nav__list {
+  @include list-reset;
+}

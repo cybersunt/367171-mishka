@@ -1,0 +1,9 @@
+@import "goods.scss";
+
+.catalog {
+  margin-bottom: 30px;
+}
+
+.catalog__list {
+  @include list-reset;
+}

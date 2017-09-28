@@ -1,0 +1,23 @@
+.reviews {
+  margin-bottom: 90px;
+}
+
+.reviews__item {
+  @include out-indents-reset;
+}
+
+.reviews__title {
+  @include text-size (25px, 30px);
+  @include text-color;
+  font-weight: 700;
+}
+
+.reviews__author-name {
+  @include text-size (17px, 24px);
+  @include text-color;
+  font-weight: 700;
+}
+
+.reviews__author-nickname {
+  font-size: 17px;
+}

@@ -1,0 +1,26 @@
+.production {
+  margin-bottom: 70px;
+}
+
+.production__list {
+  margin-bottom: 30px;
+}
+
+.production__item--interior-items {
+  background-color: #63d1bb;
+}
+
+.production__item--kid-toys {
+  background-color: #56c3b2;
+}
+
+.production__link {
+  @include link-reset;
+  @include text-size (19px, 30px);
+  @include text-color (#ffffff);
+  font-weight: 700;
+
+  &:active {
+    @include link-active (#97e2d2);
+  }
+}

@@ -1,0 +1,14 @@
+.features {
+  margin-bottom: 50px;
+}
+
+.features__title {
+  @include text-size (25px, 30px);
+}
+
+.features__list {
+  @include list-reset;
+  @include text-size (17px, 20px);
+  @include text-color;
+  font-weight: 700;
+}

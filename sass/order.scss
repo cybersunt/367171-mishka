@@ -1,0 +1,74 @@
+.order__fieldset {
+  @include int-indents-reset;
+  border: 0;
+  margin-bottom: 25px;
+}
+
+.order__title {
+  @include text-size(17px, 16px);
+  @include text-color(#63d1bb);
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.order__subtitle {
+  @include text-size(17px, 18px);
+  @include text-color;
+  font-weight: 700;
+}
+
+.order__input {
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    @include text-size(17px, 18px);
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: #62d1ba;
+
+    &::placeholder {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  &:active {
+    color: #444444;
+    outline: 0;
+    border-color: #62d1ba;
+  }
+}
+
+.order__textarea {
+  border: 2px solid #444444;
+
+  &::placeholder {
+    @include text-size(17px, 18px);
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: #62d1ba;
+
+    &::placeholder {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  &:active {
+    color: #444444;
+    outline: 0;
+    border-color: #62d1ba;
+  }
+}
+
+.order__comment {
+  @include text-size(14px, 16px);
+}

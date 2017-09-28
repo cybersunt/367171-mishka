@@ -1,0 +1,17 @@
+.video {
+  margin-bottom: 60px;
+}
+
+.video__title {
+  @include text-decoration;
+}
+
+.video__text {
+  font-size: 13px;
+}
+
+.video__btn {
+  @include text-size (17px, 16px);
+  @include text-color;
+  font-weight: 700;
+}
