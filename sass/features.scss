@@ -1,3 +1,6 @@
+.features {
+  margin-bottom: 50px;
+}
 .features__title {
   @include text-decoration ($font-size: 25px, $line-height: 30px);
 }

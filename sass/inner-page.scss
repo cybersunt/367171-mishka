@@ -25,7 +25,10 @@
 }
 
 .inner-page__name {
+  @include wrapper;
   background-color: #f1f1f1;
+  min-height: 175px;
+  margin-bottom: 30px;
 }
 
 .inner-page__name--index {
@@ -33,5 +36,5 @@
   background-repeat: no-repeat;
   background-position: center 0;
 
-  height: 373px;
+  min-height: 373px;
 }

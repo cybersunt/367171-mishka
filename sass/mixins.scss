@@ -35,3 +35,8 @@
 @mixin link-visited ($color: #000000) {
   color: $color;
 }
+
+@mixin wrapper {
+  margin-left: -30px;
+  margin-right: -30px;
+}

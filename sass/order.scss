@@ -1,6 +1,7 @@
 .order__fieldset {
   @include int-indents-reset;
   border: 0;
+  margin-bottom: 25px
 }
 
 .order__title {

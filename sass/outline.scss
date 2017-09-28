@@ -50,6 +50,15 @@
   }
 }
 
+.inner-page__name {
+  @include box-shadow(#ff2d52);
+
+  &::before {
+    content: ".inner-page__name";
+    @include before(#ff2d52);
+  }
+}
+
 .production {
   @include box-shadow(#ff2d52);
 
@@ -104,6 +113,24 @@
   }
 }
 
+.contacts__info {
+  @include box-shadow(#272cfd);
+
+  &::before {
+    content: ".contacts__info";
+    @include before(#272cfd);
+  }
+}
+
+.contacts__maps {
+  @include box-shadow(#272cfd);
+
+  &::before {
+    content: ".contacts__maps";
+    @include before(#272cfd);
+  }
+}
+
 .footer {
   @include box-shadow(#ff2d52);
 
@@ -118,6 +145,15 @@
 
   &::before {
     content: ".social";
+    @include before(#272cfd);
+  }
+}
+
+.copyright {
+  @include box-shadow(#272cfd);
+
+  &::before {
+    content: ".copyright";
     @include before(#272cfd);
   }
 }

@@ -1,3 +1,6 @@
+.copyright {
+  min-height: 80px;
+}
 .copyright__text {
   @include text-decoration ($font-size: 19px, $line-height: 18px);
 }
