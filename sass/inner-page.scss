@@ -17,6 +17,11 @@
 .inner-page__title {
   @include text-decoration (#000000, 27px, 30px, 700);
   text-align: center;
+  margin-top: 0;
+}
+
+.inner-page__title-lev2 {
+  margin-top: 0;
 }
 
 .inner-page__name {
