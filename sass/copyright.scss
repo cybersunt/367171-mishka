@@ -1,6 +1,7 @@
 .copyright {
   min-height: 80px;
 }
+
 .copyright__text {
   @include text-size (19px, 18px);
   @include text-color;

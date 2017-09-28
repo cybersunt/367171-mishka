@@ -12,7 +12,9 @@
 }
 
 .add-to-cart__value {
-  @include text-size (17px, 16px); @include text-color; font-weight: 700;
+  @include text-size (17px, 16px);
+  @include text-color;
+  font-weight: 700;
 }
 
 .add-to-cart__btn {
