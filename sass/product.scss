@@ -9,22 +9,37 @@
   text-transform: uppercase;
 }
 
+.product__description {
+  margin-top: 18px;
+}
+
 .product__info {
   @include list-reset;
+
+  margin-bottom: 30px;
 }
 
 .product__text {
+  @include out-indents-reset;
   line-height: 24px;
+  margin-bottom: 17px;
 }
 
 .product__info-item {
+  @include border-bottom;
   line-height: 20px;
+  padding: 10px 0 9px;
+}
+
+.product__buy {
+  margin-top: 15px;
 }
 
 .product__price {
   @include text-decoration;
   display: block;
   text-align: center;
+  padding-bottom: 25px;
 }
 
 .product__btn {

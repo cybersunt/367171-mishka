@@ -1,23 +1,53 @@
 .reviews {
-  margin-bottom: 90px;
+  @include wrapper;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  border-bottom: 10px solid #ececec;
+}
+
+.reviews__list {
+  padding-bottom: 37px;
 }
 
 .reviews__item {
   @include out-indents-reset;
+  padding-bottom: 30px;
 }
 
 .reviews__title {
   @include text-size (25px, 30px);
   @include text-color;
+  @include out-indents-reset;
   font-weight: 700;
+  padding-bottom: 24px;
+}
+
+.reviews__text {
+  @include out-indents-reset;
+  padding-bottom: 27px;
 }
 
 .reviews__author-name {
+  @include out-indents-reset;
   @include text-size (17px, 24px);
   @include text-color;
   font-weight: 700;
+  padding-bottom: 3px
 }
 
 .reviews__author-nickname {
+  @include out-indents-reset;
   font-size: 17px;
+}
+
+.reviews__buttons {
+  display: flex;
+}
+
+.reviews__prev {
+  @include arrows;
+}
+
+.reviews__next {
+  @include arrows;
 }

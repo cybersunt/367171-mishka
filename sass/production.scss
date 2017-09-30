@@ -1,9 +1,17 @@
 .production {
-  margin-bottom: 70px;
+  padding-bottom: 35px;
+  border-bottom: 10px solid #ececec;
 }
 
 .production__list {
-  margin-bottom: 30px;
+  min-height: 180px;
+}
+
+.production__item {
+  @include wrapper;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-right: 115px;
 }
 
 .production__item--interior-items {
@@ -16,11 +24,18 @@
 
 .production__link {
   @include link-reset;
-  @include text-size (19px, 30px);
+  @include text-size (19px, 24px);
   @include text-color (#ffffff);
   font-weight: 700;
+  display: block;
 
   &:active {
     @include link-active (#97e2d2);
   }
+}
+
+.production__best-goods {
+  @include wrapper;
+  padding-top: 27px;
+  margin: 0 auto;
 }

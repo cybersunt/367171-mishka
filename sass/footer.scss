@@ -2,6 +2,24 @@
 @import "copyright.scss";
 
 .footer {
-  background-color: #f1f1f1;
+  @include wrapper;
   min-height: 160px;
+}
+
+.footer__wrap {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

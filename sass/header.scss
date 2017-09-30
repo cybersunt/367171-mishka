@@ -1,0 +1,6 @@
+.header__wrap {
+  width: 260px;
+  height: 80px;
+  @include wrapper;
+  @include border-bottom;
+}

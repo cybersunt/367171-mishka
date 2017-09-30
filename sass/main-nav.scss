@@ -1,6 +1,36 @@
 @import "menu-list.scss";
 @import "user-list.scss";
 
+.main-nav {
+  height: 80px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.main-nav__logo {
+  margin-right: 68px;
+}
+
+.main-nav__menu {
+  display: none;
+}
+
+.main-nav__show {
+  display: block;
+}
+
 .main-nav__list {
   @include list-reset;
+}
+
+.main-nav__toggle {
+  background-color: #ffffff;
+  background-image: url(../img/icon-menu-open.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 20px;
+  height: 14px;
+  border: 0;
 }

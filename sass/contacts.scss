@@ -1,15 +1,20 @@
 .contacts {
-  margin-bottom: 40px;
-}
-
-.contacts__info {
-  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 38px;
 }
 
 .contacts__title {
+  @include wrapper;
   @include text-size (18px, 30px);
   @include text-color;
   font-weight: 700;
+}
+
+.contacts__info {
+  @include wrapper;
+  padding-top: 27px;
+  padding-bottom: 40px;
+  min-height: 175px;
 }
 
 .contacts__info-desc--mail {
@@ -36,11 +41,14 @@
   }
 }
 
-.contacts__map {
-  @include wrapper;
-  margin-bottom: 40px;
+.contacts__maps {
+  margin-bottom: 38px;
 }
 
 .contacts__img {
   display: block;
+}
+
+.contacts__btn {
+  @include wrapper;
 }
