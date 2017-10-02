@@ -6,6 +6,7 @@
     height: 90px;
   }
 }
+
 .user-list__item {
   @media screen #{$tablet-width} {
     height: 90px;
@@ -44,7 +45,6 @@
 .user-list__link--search {
   @media screen #{$tablet-width} {
     font-size: 0;
-
   }
 }
 
