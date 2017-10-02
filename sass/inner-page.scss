@@ -80,7 +80,8 @@
 }
 
 .inner-page__name--index {
-  background-image: #fafafa;
+  @include wrapper;
+  background-color: #fafafa;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -19px;
@@ -88,7 +89,6 @@
   min-height: 192px;
   padding-top: 70px;
   padding-bottom: 20px;
-  @include wrapper;
 
   @media screen #{$tablet-width} {
     @include int-indents-reset;

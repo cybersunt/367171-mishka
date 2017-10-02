@@ -1,7 +1,7 @@
 .add-to-cart {
+  @include wrapper;
   width: 320px;
   margin: 0 auto;
-  @include wrapper;
 }
 
 .add-to-cart__title {
