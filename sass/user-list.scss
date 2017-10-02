@@ -1,3 +1,25 @@
+.user-list {
+  @media screen #{$tablet-width} {
+    order: 0;
+    display: flex;
+    width: 348px;
+    height: 90px;
+  }
+}
+.user-list__item {
+  @media screen #{$tablet-width} {
+    height: 90px;
+  }
+}
+
+.user-list__item--search {
+  @media screen #{$tablet-width} {
+    width: 80px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+}
+
 .user-list__link {
   @include link-reset;
   @include text-decoration;
@@ -16,5 +38,18 @@
 
   &:active {
     @include link-active;
+  }
+}
+
+.user-list__link--search {
+  @media screen #{$tablet-width} {
+    font-size: 0;
+
+  }
+}
+
+.user-list__item--cart {
+  @media screen #{$tablet-width} {
+    margin-left: auto;
   }
 }

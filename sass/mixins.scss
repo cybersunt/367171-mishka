@@ -14,6 +14,11 @@
   padding: 0;
 }
 
+@mixin vert-padding ($padding-top, $padding-bottom) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
 @mixin link-reset {
   text-decoration: none;
 }

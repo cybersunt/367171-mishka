@@ -7,14 +7,25 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+
+  @media screen #{$tablet-width} {
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 0;
+  }
 }
 
 .main-nav__logo {
   margin-right: 68px;
-}
 
-.main-nav__menu {
-  display: none;
+  @media screen #{$tablet-width} {
+    height: 90px;
+    width: 320px;
+    margin-right: 0;
+  }
 }
 
 .main-nav__show {
@@ -23,6 +34,12 @@
 
 .main-nav__list {
   @include list-reset;
+  display: none;
+
+  @media screen #{$tablet-width} {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .main-nav__toggle {
@@ -33,4 +50,8 @@
   width: 20px;
   height: 14px;
   border: 0;
+
+  @media screen #{$tablet-width} {
+    display: none;
+  }
 }

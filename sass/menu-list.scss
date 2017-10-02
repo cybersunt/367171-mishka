@@ -1,3 +1,12 @@
+.menu-list {
+
+  @media screen #{$tablet-width} {
+    order: 1;
+    width: 320px;
+  }
+}
+
+
 .menu-list__item--hidden {
   display: none;
 }
@@ -20,5 +29,9 @@
 
   &:active {
     @include link-active;
+  }
+
+  @media screen #{$tablet-width} {
+    @include text-size(15px, 24px);
   }
 }

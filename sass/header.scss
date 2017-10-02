@@ -3,4 +3,9 @@
   height: 80px;
   @include wrapper;
   @include border-bottom;
+
+  @media screen #{$tablet-width} {
+    min-height: 150px;
+    border: 0;
+  }
 }

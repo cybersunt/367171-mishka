@@ -1,7 +1,11 @@
 .features {
   @include wrapper;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  @include vert-padding (25px, 25px);
+
+  @media screen #{$tablet-width} {
+    @include int-indents-reset;
+    @include vert-padding (52px, 25px);
+  }
 }
 
 .features__title {
@@ -9,6 +13,11 @@
   @include text-color;
   @include out-indents-reset;
   padding-bottom: 30px;
+
+  @media screen #{$tablet-width} {
+    @include text-size(43px, 50px);
+    padding-bottom: 50px;
+  }
 }
 
 .features__list {
@@ -20,16 +29,35 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 710px;
+
+    @media screen #{$tablet-width} {
+    @include text-size(20px, 22px);
+    min-height: 470px;
+    max-height: 470px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
 }
 
 .features__item {
   min-height: 95px;
   display: flex;
   flex-direction: column;
+
+  @media screen #{$tablet-width} {
+    padding-bottom: 60px;
+    width: 50%;
+  }
 }
 
 // Временно для составления сетки
 .features__img {
   display: block;
   padding-bottom: 20px;
+
+  @media screen #{$tablet-width} {
+    padding-bottom: 16px;
+  }
 }
