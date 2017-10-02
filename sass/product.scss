@@ -1,7 +1,7 @@
 .product__title {
   @include text-size (25px, 30px);
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
   }
 }
@@ -12,7 +12,7 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     @include text-size(17px, 17px);
     position: absolute;
   }
@@ -21,7 +21,7 @@
 .product__description {
   margin-top: 18px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     margin-top: 49px;
     position: relative;
     width: 290px;
@@ -33,7 +33,7 @@
   line-height: 24px;
   margin-bottom: 17px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     line-height: 30px;
     margin-bottom: 35px;
   }
@@ -43,7 +43,7 @@
   @include list-reset;
   margin-bottom: 30px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     @include text-size(15px, 20px);
     margin-bottom: 58px;
   }
@@ -56,7 +56,7 @@
 }
 
 .product__img {
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     position: absolute;
     top: 0;
     right: -378px;
@@ -74,7 +74,7 @@
   text-align: center;
   padding-bottom: 25px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     @include text-size (20px, 24px);
     padding-bottom: 34px;
   }

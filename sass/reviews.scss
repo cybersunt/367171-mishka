@@ -3,6 +3,13 @@
   padding-top: 30px;
   padding-bottom: 45px;
   border-bottom: 10px solid #ececec;
+
+  @media screen and (min-width: $tablet-width) {
+    @include int-indents-reset;
+    @include vert-padding (79px, 30px);
+    position: relative;
+    border-bottom: 20px solid #ececec;
+  }
 }
 
 .reviews__list {
@@ -12,6 +19,10 @@
 .reviews__item {
   @include out-indents-reset;
   padding-bottom: 30px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 46px;
+  }
 }
 
 .reviews__title {
@@ -20,11 +31,21 @@
   @include out-indents-reset;
   font-weight: 700;
   padding-bottom: 24px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(43px, 50px);
+    padding-bottom: 50px;
+    padding-right: 180px;
+  }
 }
 
 .reviews__text {
   @include out-indents-reset;
   padding-bottom: 27px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 56px;
+  }
 }
 
 .reviews__author-name {
@@ -33,21 +54,53 @@
   @include text-color;
   font-weight: 700;
   padding-bottom: 3px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-bottom: 4px;
+  }
 }
 
 .reviews__author-nickname {
   @include out-indents-reset;
   font-size: 17px;
+
+  // @media screen and (min-width: $tablet-width) {
+  //   @include text-size (18px, 24px);
+  //   font-size: 18px;
+  // }
 }
 
 .reviews__buttons {
   display: flex;
+
+  @media screen and (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 110px;
+    right: 7px;
+  }
 }
 
 .reviews__prev {
   @include arrows;
+
+  @media screen and (min-width: $tablet-width) {
+    @include arrows (80px, 48px);
+  }
 }
 
 .reviews__next {
   @include arrows;
+
+  @media screen and (min-width: $tablet-width) {
+    @include arrows (80px, 48px);
+  }
+}
+
+.reviews__btn {
+  @media screen and (min-width: $tablet-width) {
+    position: absolute;
+    top: 80px;
+    right: 0
+  }
 }

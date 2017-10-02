@@ -1,5 +1,5 @@
 .menu-list {
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     order: 1;
     width: 320px;
   }
@@ -29,7 +29,7 @@
     @include link-active;
   }
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     @include text-size(15px, 24px);
   }
 }

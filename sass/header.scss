@@ -4,7 +4,7 @@
   width: 260px;
   height: 80px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     min-height: 150px;
     border: 0;
   }

@@ -1,5 +1,5 @@
 .user-list {
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     order: 0;
     display: flex;
     width: 348px;
@@ -8,14 +8,14 @@
 }
 
 .user-list__item {
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     height: 90px;
   }
 }
 
 .user-list__item--search {
-  @media screen #{$tablet-width} {
-    width: 80px;
+  @media screen and (min-width: $tablet-width) {
+    width: 82px;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
   }
@@ -43,13 +43,13 @@
 }
 
 .user-list__link--search {
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     font-size: 0;
   }
 }
 
 .user-list__item--cart {
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     margin-left: auto;
   }
 }

@@ -2,9 +2,9 @@
   @include wrapper;
   @include vert-padding (25px, 25px);
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
-    @include vert-padding (52px, 25px);
+    @include vert-padding (52px, 18px);
   }
 }
 
@@ -14,7 +14,7 @@
   @include out-indents-reset;
   padding-bottom: 30px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
     padding-bottom: 50px;
   }
@@ -30,7 +30,7 @@
   justify-content: space-between;
   min-height: 710px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     @include text-size(20px, 22px);
     min-height: 470px;
     max-height: 470px;
@@ -46,7 +46,7 @@
   display: flex;
   flex-direction: column;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     padding-bottom: 60px;
     width: 50%;
   }
@@ -57,7 +57,7 @@
   display: block;
   padding-bottom: 20px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     padding-bottom: 16px;
   }
 }

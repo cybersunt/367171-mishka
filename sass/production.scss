@@ -6,7 +6,7 @@
 .production__list {
   min-height: 180px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     min-height: 118px;
     display: flex;
     // padding-top: 92px;
@@ -20,7 +20,7 @@
   padding-bottom: 30px;
   padding-right: 115px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     width: 334px;
     padding-top: 28px;
     padding-left: 36px;
@@ -47,7 +47,7 @@
     @include link-active (#97e2d2);
   }
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     @include text-size (20px, 30px);
   }
 }
@@ -57,7 +57,7 @@
   padding-top: 27px;
   margin: 0 auto;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     // @include text-size (20px, 30px);
     @include int-indents-reset;
     @include vert-padding (46px, 20px);

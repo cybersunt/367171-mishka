@@ -4,12 +4,31 @@
 .footer {
   @include wrapper;
   min-height: 160px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include int-indents-reset;
+    min-height: 143px;
+  }
 }
 
 .footer__wrap {
   background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .footer__social {

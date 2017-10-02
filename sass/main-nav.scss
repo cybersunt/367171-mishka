@@ -7,8 +7,9 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  position: relative;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     min-height: 150px;
     display: flex;
     flex-direction: row;
@@ -21,7 +22,7 @@
 .main-nav__logo {
   margin-right: 68px;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     height: 90px;
     width: 320px;
     margin-right: 0;
@@ -36,7 +37,7 @@
   @include list-reset;
   display: none;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     display: flex;
     align-items: center;
   }
@@ -51,7 +52,19 @@
   height: 14px;
   border: 0;
 
-  @media screen #{$tablet-width} {
+  @media screen and (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav__note {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(15px, 24px);
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    right: 0;
   }
 }

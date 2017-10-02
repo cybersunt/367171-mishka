@@ -1,6 +1,10 @@
 .contacts {
   padding-top: 30px;
   padding-bottom: 38px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include vert-padding (59px, 57px);
+  }
 }
 
 .contacts__title {
@@ -8,13 +12,37 @@
   @include text-size (18px, 30px);
   @include text-color;
   font-weight: 700;
+
+  @media screen and (min-width: $tablet-width) {
+    @include int-indents-reset;
+    @include text-size(43px, 50px);
+    padding-right: 60px;
+  }
 }
 
 .contacts__info {
   @include wrapper;
-  padding-top: 27px;
-  padding-bottom: 40px;
+  @include vert-padding(27px, 40px);
   min-height: 175px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include int-indents-reset;
+    @include vert-padding(48px, 56px);
+    min-height: 90px;
+    display: flex;
+  }
+}
+
+.contacts__info-name {
+  @media screen and (min-width: $tablet-width) {
+    width: 78px;
+  }
+}
+
+.contacts__info-desc {
+  @media screen and (min-width: $tablet-width) {
+    width: 256px;
+  }
 }
 
 .contacts__info-desc--mail {
@@ -43,6 +71,13 @@
 
 .contacts__maps {
   margin-bottom: 38px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 768px;
+    margin-bottom: 53px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
 }
 
 .contacts__img {
@@ -51,4 +86,10 @@
 
 .contacts__btn {
   @include wrapper;
+
+  @media screen and (min-width: $tablet-width) {
+    @include int-indents-reset;
+    width: 231px;
+    margin: 0 auto;
+  }
 }
