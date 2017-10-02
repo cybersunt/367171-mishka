@@ -1,8 +1,8 @@
 .header__wrap {
-  width: 260px;
-  height: 80px;
   @include wrapper;
   @include border-bottom;
+  width: 260px;
+  height: 80px;
 
   @media screen #{$tablet-width} {
     min-height: 150px;

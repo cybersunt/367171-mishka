@@ -3,6 +3,7 @@
   margin: 0 auto;
   @include wrapper;
 }
+
 .add-to-cart__title {
   @include text-size (25px, 30px);
   @include text-color;

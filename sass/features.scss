@@ -30,7 +30,7 @@
   justify-content: space-between;
   min-height: 710px;
 
-    @media screen #{$tablet-width} {
+  @media screen #{$tablet-width} {
     @include text-size(20px, 22px);
     min-height: 470px;
     max-height: 470px;
