@@ -1,8 +1,9 @@
 .social {
-  min-height: 80px;
+  height: 80px;
+  flex-wrap: wrap;
 
   @media screen and (min-width: $tablet-width) {
-    min-height: 143px;
+    height: 143px;
   }
 }
 

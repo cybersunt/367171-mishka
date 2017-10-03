@@ -80,32 +80,36 @@
 
         <section class="features">
           <h2 class="features__title inner-page__title-second">Коротко о нас</h2>
-          <ul class="features__list">
-            <li class="features__item">
-              <img  class="features__img" width="32" height="37" src="img/icon-feature-flower.svg" alt="Экологически чистые материалы" />
+          <div class="features__row">
+            <ul class="features__list">
+              <li class="features__item">
+                <img  class="features__img" width="32" height="37" src="img/icon-feature-flower.svg" alt="Экологически чистые материалы" />
               Экологически чистые материалы
-            </li>
-            <li class="features__item">
-              <img  class="features__img" width="42" height="27" src="img/icon-feature-money.svg" alt="Скандинавский стиль по российской цене" />
+              </li>
+              <li class="features__item">
+                <img  class="features__img" width="42" height="27" src="img/icon-feature-money.svg" alt="Скандинавский стиль по российской цене" />
               Скандинавский стиль по российской цене
-            </li>
-            <li class="features__item">
-              <img  class="features__img" width="33" height="28" src="img/icon-feature-heart.svg" alt="Увеличивает лайки на фотографиях" />
+              </li>
+              <li class="features__item">
+                <img  class="features__img" width="33" height="28" src="img/icon-feature-heart.svg" alt="Увеличивает лайки на фотографиях" />
               Увеличивает лайки на фотографиях
-            </li>
-            <li class="features__item">
-              <img  class="features__img" width="34" height="34" src="img/icon-feature-ball.svg" alt="Связано вручную с любовью и умилением" />
+              </li>
+            </ul>
+            <ul class="features__list">
+              <li class="features__item">
+                <img  class="features__img" width="34" height="34" src="img/icon-feature-ball.svg" alt="Связано вручную с любовью и умилением" />
               Связано вручную с любовью и умилением
-            </li>
-            <li class="features__item">
-              <img  class="features__img" width="54" height="23" src="img/icon-feature-rocket.svg" alt="Поддержка отечественного производителя" />
+              </li>
+              <li class="features__item">
+                <img  class="features__img" width="54" height="23" src="img/icon-feature-rocket.svg" alt="Поддержка отечественного производителя" />
               Поддержка отечественного производителя
-            </li>
-            <li class="features__item">
-              <img  class="features__img" width="33" height="32" src="img/icon-feature-gift.svg" alt="Поставляется в подарочной упаковке" />
+              </li>
+              <li class="features__item">
+                <img  class="features__img" width="33" height="32" src="img/icon-feature-gift.svg" alt="Поставляется в подарочной упаковке" />
               Поставляется в подарочной упаковке
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="reviews slider">
@@ -132,12 +136,24 @@
 
         <section class="contacts">
           <h2 class="contacts__title inner-page__title-second">Контакты</h2>
-          <div class="contacts__info">
-            <span class="contacts__info-name">e-mail:</span>
-            <a class="contacts__info-desc contacts__info-desc--mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            <span class="contacts__info-name">адрес:</span>
-            <span class="contacts__info-desc">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
-          </div>
+          <table class="contacts__info">
+            <tr class="contacts__row">
+              <td class="contacts__cell">
+                <span class="contacts__info-name">e-mail:</span>
+              </td>
+              <td class="contacts__cell">
+                <a class="contacts__info-desc contacts__info-desc--mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </td>
+            </tr>
+            <tr class="contacts__row">
+              <td class="contacts__cell">
+                <span class="contacts__info-name">адрес:</span>
+              </td>
+              <td class="contacts__cell">
+                <span class="contacts__info-desc">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
+              </td>
+            </tr>
+          </table>
           <div class="contacts__maps">
             <div class="contacts__map contacts__map--ymap hidden">
               <!-- Интерактивная карта -->

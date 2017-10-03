@@ -21,28 +21,51 @@
 }
 
 .contacts__info {
-  @include wrapper;
-  @include vert-padding(27px, 40px);
-  min-height: 175px;
+  margin-left: 27px;
+  margin-right: 27px;
+  margin-top: 26px;
+  margin-bottom: 36px;
+  border-collapse: collapse;
+  width: auto;
 
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include out-indents-reset;
     @include vert-padding(48px, 56px);
-    min-height: 90px;
+    margin-top: 47px;
+    margin-bottom: 55px;
+
+  }
+
+  tbody {
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+}
+
+.contacts__row {
+  @media screen and (min-width: $tablet-width) {
     display: flex;
   }
 }
 
-.contacts__info-name {
-  @media screen and (min-width: $tablet-width) {
-    width: 78px;
-  }
-}
+.contacts__cell {
+  vertical-align: top;
 
-.contacts__info-desc {
-  @media screen and (min-width: $tablet-width) {
-    width: 256px;
+  &:nth-child(2n-1) {
+    width: 77px;
+    height: 58px;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    &:nth-child(2n-1) {
+    width: 74px;
+  }
+    &:nth-child(2n) {
+      width: 254px;
+    }
+  }
+
 }
 
 .contacts__info-desc--mail {
@@ -70,7 +93,7 @@
 }
 
 .contacts__maps {
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 
   @media screen and (min-width: $tablet-width) {
     width: 768px;

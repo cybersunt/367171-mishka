@@ -1,7 +1,6 @@
 .reviews {
   @include wrapper;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  @include vert-padding (16px, 45px);
   border-bottom: 10px solid #ececec;
 
   @media screen and (min-width: $tablet-width) {
@@ -76,7 +75,7 @@
 
   @media screen and (min-width: $tablet-width) {
     position: absolute;
-    bottom: 110px;
+    bottom: 117px;
     right: 7px;
   }
 }

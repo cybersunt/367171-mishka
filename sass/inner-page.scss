@@ -1,17 +1,3 @@
-@media screen and (min-width: $tablet-width) {
-  .inner-page {
-    // background: #ffffff url("../bg/index-tablet.jpg") no-repeat 50% 0;
-    background-size: 768px auto;
-  }
-}
-
-// @media (max-width: 1200px) {
-//   .inner-page {
-//     background: #ffffff url("../bg/index-desktop.jpg") no-repeat 50% 0;
-//     background-size: 1391px auto;
-//   }
-// }
-
 .inner-page {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
@@ -22,11 +8,11 @@
   margin: 0 auto;
 
   // Временно для построяния сетки
-  // background: #ffffff url("../bg/index-mobile.jpg") no-repeat 50% 0;
-  // // background: #ffffff url("../bg/catalog-mobile.jpg") no-repeat 50% 0;
-  // opacity: 0.8;
-  // background-size: 320px auto;
-  // min-height: 750px;
+  background: #ffffff url("../bg/index-mobile.jpg") no-repeat 50% 0;
+  // background: #ffffff url("../bg/catalog-mobile.jpg") no-repeat 50% 0;
+  opacity: 0.8;
+  background-size: 320px auto;
+  min-height: 750px;
 
   @media screen and (min-width: $tablet-width) {
     width: 768px;
@@ -34,6 +20,20 @@
     font-size: 17px;
   }
 }
+
+@media screen and (min-width: $tablet-width) {
+  .inner-page {
+    background: #ffffff url("../bg/index-tablet.jpg") no-repeat 50% 0;
+    background-size: 768px auto;
+  }
+}
+
+// @media (max-width: 1200px) {
+//   .inner-page {
+//     background: #ffffff url("../bg/index-desktop.jpg") no-repeat 50% 0;
+//     background-size: 1391px auto;
+//   }
+// }
 
 .inner-page__wrap {
   box-sizing: border-box;
@@ -62,7 +62,7 @@
   }
 }
 
-.inner-page__title-lev2 {
+.inner-page__title-second {
   @include out-indents-reset;
 
   @media screen and (min-width: $tablet-width) {

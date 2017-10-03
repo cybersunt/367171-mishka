@@ -1,10 +1,10 @@
 .features {
   @include wrapper;
-  @include vert-padding (25px, 25px);
+  @include vert-padding (25px, 10px);
 
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
-    @include vert-padding (52px, 18px);
+    @include vert-padding (52px, 21px);
   }
 }
 
@@ -20,44 +20,48 @@
   }
 }
 
+.features__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
 .features__list {
   @include list-reset;
   @include text-size (17px, 20px);
   @include text-color;
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 710px;
+
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(20px, 22px);
-    min-height: 470px;
-    max-height: 470px;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: space-around;
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
 .features__item {
-  min-height: 95px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 
   @media screen and (min-width: $tablet-width) {
     padding-bottom: 60px;
-    width: 50%;
   }
 }
 
 // Временно для составления сетки
 .features__img {
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 
   @media screen and (min-width: $tablet-width) {
-    padding-bottom: 16px;
+    padding-bottom: 21px;
   }
 }
