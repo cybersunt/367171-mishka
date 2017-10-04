@@ -27,6 +27,14 @@
     width: 320px;
     margin-right: 0;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    order: 1;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .main-nav__show {
@@ -39,9 +47,15 @@
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 445px;
+  }
 }
+
 
 .main-nav__toggle {
   background-color: #ffffff;
@@ -66,5 +80,9 @@
     position: absolute;
     bottom: 16px;
     right: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    bottom: 20px;
   }
 }

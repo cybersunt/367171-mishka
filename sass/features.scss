@@ -6,6 +6,10 @@
     @include int-indents-reset;
     @include vert-padding (52px, 21px);
   }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 26px;
+  }
 }
 
 .features__title {
@@ -18,6 +22,11 @@
     @include text-size(43px, 50px);
     padding-bottom: 50px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    @include text-size(53px, 57px);
+    @include left-wrap;
+  }
 }
 
 .features__row {
@@ -27,6 +36,10 @@
 
   @media screen and (min-width: $tablet-width) {
     flex-direction: row;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    justify-content: center;
   }
 }
 

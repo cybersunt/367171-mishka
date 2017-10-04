@@ -1,9 +1,16 @@
 .contacts {
   padding-top: 30px;
   padding-bottom: 38px;
+  position: relative;
 
   @media screen and (min-width: $tablet-width) {
     @include vert-padding (59px, 57px);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    @include left-wrap;
+    @include vert-padding (140px, 103px);
+    width: 355px;
   }
 }
 
@@ -18,6 +25,10 @@
     @include text-size(43px, 50px);
     padding-right: 60px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    @include text-size(53px, 57px);
+  }
 }
 
 .contacts__info {
@@ -30,15 +41,22 @@
 
   @media screen and (min-width: $tablet-width) {
     @include out-indents-reset;
-    @include vert-padding(48px, 56px);
     margin-top: 47px;
     margin-bottom: 55px;
+  }
 
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 5px;
+    margin-bottom: 78px;
   }
 
   tbody {
     @media screen and (min-width: $tablet-width) {
       display: flex;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      display: table;
     }
   }
 }
@@ -59,13 +77,18 @@
 
   @media screen and (min-width: $tablet-width) {
     &:nth-child(2n-1) {
-    width: 74px;
+    width: 73px;
   }
     &:nth-child(2n) {
-      width: 254px;
+      width: 258px;
     }
   }
 
+  @media screen and (min-width: $tablet-width) {
+    &:nth-child(2n-1) {
+    width: 75px;
+    }
+  }
 }
 
 .contacts__info-desc--mail {
@@ -101,6 +124,14 @@
     margin-left: -50px;
     margin-right: -50px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 521px;
+    height: 460px;
+    position: absolute;
+    top: 68px;
+    right: -471px;
+  }
 }
 
 .contacts__img {
@@ -114,5 +145,9 @@
     @include int-indents-reset;
     width: 231px;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 5px;
   }
 }
