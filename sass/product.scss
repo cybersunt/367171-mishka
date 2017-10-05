@@ -83,7 +83,7 @@
 }
 
 .product__info-item {
-  @include border-bottom;
+  border-bottom: $border;
   line-height: 20px;
   padding: 10px 0 9px;
 }

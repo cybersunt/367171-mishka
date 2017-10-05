@@ -1,17 +1,57 @@
 .video {
+  padding-bottom: 30px;
   margin-bottom: 60px;
+}
+
+.video__wrap {
+  @include wrapper;
+  @include container;
+  display: flex;
+  flex-direction: column;
 }
 
 .video__title {
   @include text-decoration;
+  padding-top: 23px;
+  padding-left: 90px;
+  padding-bottom: 23px;
+  border-top: $border;
+  box-sizing: $box-sizing;
+}
+
+.video__player {
+  position: relative;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: $tablet-width) {
+    height: 455px;
+  }
+}
+
+.video__img {
+  display: block;
+}
+
+.video__start-btn {
+  position: absolute;
+  top: 42px;
+  left: 86px;
+}
+
+.video__desc {
+  padding-right: 34px;
+  padding-left: 34px;
 }
 
 .video__text {
-  font-size: 13px;
+  @include out-indents-reset;
+  @include text-size (13px, 24px);
+  margin-bottom: 25px;
 }
 
-.video__btn {
+.video__btn-link {
   @include text-size (17px, 16px);
   @include text-color;
   font-weight: 700;
+  padding: 16px;
 }

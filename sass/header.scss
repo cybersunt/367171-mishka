@@ -1,11 +1,13 @@
-.header__wrap {
-  @include wrapper;
-  @include border-bottom;
-  width: 260px;
+.header {
   height: 80px;
 
   @media screen and (min-width: $tablet-width) {
     min-height: 150px;
     border: 0;
   }
+}
+
+.header__wrap {
+  @include wrapper;
+  @include container;
 }

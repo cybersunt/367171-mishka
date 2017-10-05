@@ -5,13 +5,12 @@
   color: #444444;
   background-color: #ffffff;
   min-width: 320px;
-  margin: 0 auto;
 
   // Временно для построяния сетки
-  // background: #ffffff url("../bg/index-mobile.jpg") no-repeat 50% 0;
-  // background: #ffffff url("../bg/catalog-mobile.jpg") no-repeat 50% 0;
-  // opacity: 0.8;
-  // background-size: 320px auto;
+  background: #ffffff url("../bg/index-mobile.jpg") no-repeat 50% 0;
+  background: #ffffff url("../bg/catalog-mobile.jpg") no-repeat 50% 0;
+  opacity: 0.8;
+  background-size: 320px auto;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 17px;
@@ -39,8 +38,8 @@
   margin: 0 auto;
 
   @media screen and (min-width: $tablet-width) {
-    width: 768px;
     padding: 0 50px;
+    width: 768px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -48,18 +47,56 @@
   }
 }
 
+.inner-page__name {
+  @include wrapper;
+  box-sizing: $box-sizing;
+  border-top: $border;
+  min-height: 175px;
+  padding-top: 70px;
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 225px;
+    padding-top: 90px;
+    margin-top: -60px;
+    margin-bottom: 80px;
+  }
+}
+
+.inner-page__name--index {
+  @include wrapper;
+  @include vert-padding (70px, 20px);
+  background-color: #fafafa;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -19px;
+
+  min-height: 192px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include int-indents-reset;
+    @include vert-padding (92px, 20px);
+    min-height: 565px;
+    background-image: none;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    min-height: 566px;
+    padding-left: 217px;
+    padding-right: 217px;
+  }
+}
+
 .inner-page__title {
+  @include out-indents-reset;
   @include text-size(27px, 30px);
   @include text-color;
   font-weight: 700;
   text-align: center;
-  margin-top: 0;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
-    @include out-indents-reset;
-    padding-top: 92px;
-    padding-bottom: 20px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -72,37 +109,5 @@
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
-  }
-}
-
-.inner-page__name {
-  @include wrapper;
-  background-color: #f1f1f1;
-
-  min-height: 175px;
-  margin-bottom: 30px;
-}
-
-.inner-page__name--index {
-  @include wrapper;
-  background-color: #fafafa;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center -19px;
-
-  min-height: 192px;
-  padding-top: 70px;
-  padding-bottom: 20px;
-
-  @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
-    min-height: 565px;
-    background-image: none;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    min-height: 566px;
-    padding-left: 217px;
-    padding-right: 217px;
   }
 }

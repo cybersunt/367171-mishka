@@ -35,23 +35,41 @@
   color: #8d8d8d;
 }
 
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 1150px;
+  }
+}
+
 @mixin wrapper {
   padding-left: 30px;
   padding-right: 30px;
-}
-
-@mixin border-bottom {
-  border-bottom: 1px solid #ececec;
 }
 
 @mixin left-wrap {
   padding-left: 169px;
 }
 
-@mixin arrows ($width: 130px, $height: 52px) {
-  width: $width;
-  height: $height;
-  border: 0;
+@mixin grid-direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 // Миксины с переменными
@@ -70,4 +88,10 @@
 @mixin text-size ($font-size: 17px, $line-height: 24px) {
   font-size: $font-size;
   line-height: $line-height;
+}
+
+@mixin arrows ($width: 130px, $height: 52px) {
+  width: $width;
+  height: $height;
+  border: 0;
 }

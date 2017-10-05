@@ -2,24 +2,35 @@
 @import "copyright.scss";
 
 .footer {
-  @include wrapper;
+  background-color: #f1f1f1;
   min-height: 160px;
+  min-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
     min-height: 143px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+  }
 }
 
 .footer__wrap {
-  background-color: #f1f1f1;
+  @include wrapper;
   display: flex;
   flex-direction: column;
 
   @media screen and (min-width: $tablet-width) {
+    width: 768px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 1150px;
   }
 }
 
