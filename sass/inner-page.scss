@@ -57,6 +57,7 @@
   background-color: #f1f1f1;
 
   @media screen and (min-width: $tablet-width) {
+    @include int-indents-reset;
     min-height: 225px;
     padding-top: 90px;
     margin-top: -60px;
