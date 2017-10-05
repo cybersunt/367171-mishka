@@ -1,12 +1,12 @@
 .add-to-cart {
+  box-sizing: $box-sizing;
   width: 320px;
   margin: 0 auto;
 
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
-    box-sizing: border-box;
-    width: 364px;
-    height: 241px;
+    width: 570px;
+    height: 340px;
     border: 1px solid #c6c6c6;
     padding: 53px 100px 46px;
   }
