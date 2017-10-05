@@ -1,5 +1,4 @@
 .video {
-  padding-bottom: 30px;
   margin-bottom: 60px;
 }
 
@@ -15,13 +14,14 @@
   padding-top: 23px;
   padding-left: 90px;
   padding-bottom: 23px;
-  border-top: $border;
+  padding-right: 30px;
+  border-bottom: none;
+  border: $border;
   box-sizing: $box-sizing;
 }
 
 .video__player {
   position: relative;
-  margin-bottom: 28px;
 
   @media screen and (min-width: $tablet-width) {
     height: 455px;
@@ -39,14 +39,26 @@
 }
 
 .video__desc {
-  padding-right: 34px;
-  padding-left: 34px;
+  padding: 26px 34px;
+  box-sizing: $box-sizing;
+  border: $border;
+
+  @media screen and (min-width: $tablet-width) {
+    @include int-indents-reset;
+    border: 0;
+  }
 }
 
 .video__text {
   @include out-indents-reset;
   @include text-size (13px, 24px);
   margin-bottom: 25px;
+
+
+}
+
+.video__btn {
+  padding-bottom: 5px;
 }
 
 .video__btn-link {

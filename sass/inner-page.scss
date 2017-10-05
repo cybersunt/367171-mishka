@@ -21,6 +21,7 @@
 //   .inner-page {
 //     opacity: 0.8;
 //     background: #ffffff url("../bg/index-tablet.jpg") no-repeat 50% 0;
+//     background: #ffffff url("../bg/catalog-tablet.jpg") no-repeat 50% 0;
 //     background-size: 768px auto;
 //   }
 // }
@@ -48,11 +49,10 @@
 }
 
 .inner-page__name {
-  @include wrapper;
   box-sizing: $box-sizing;
   border-top: $border;
   min-height: 175px;
-  padding-top: 70px;
+  padding: 70px 0;
   margin-bottom: 30px;
   background-color: #f1f1f1;
 
@@ -91,6 +91,7 @@
 
 .inner-page__title {
   @include out-indents-reset;
+  @include wrapper;
   @include text-size(27px, 30px);
   @include text-color;
   font-weight: 700;
