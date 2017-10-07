@@ -4,7 +4,7 @@
   padding-bottom: 30px;
 
   @media screen and (min-width: $tablet-width) {
-    padding-bottom: 55px;
+    padding-bottom: 53px;
   }
 }
 
@@ -15,4 +15,8 @@
 
 .catalog__list {
   @include list-reset;
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+  }
 }
