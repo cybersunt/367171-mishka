@@ -41,6 +41,8 @@
   box-sizing: border-box;
 
   @media screen and (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
     width: 668px;
   }
 

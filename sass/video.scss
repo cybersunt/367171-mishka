@@ -15,9 +15,17 @@
   padding-left: 90px;
   padding-bottom: 23px;
   padding-right: 30px;
-  border-bottom: none;
   border: $border;
   box-sizing: $box-sizing;
+  border-bottom: none;
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(20px, 24px);
+    padding-bottom: 0;
+    padding-top: 36px;
+    padding-left: 106px;
+    margin-bottom: 32px;
+  }
 }
 
 .video__player {
@@ -25,6 +33,7 @@
 
   @media screen and (min-width: $tablet-width) {
     height: 455px;
+    order: -1;
   }
 }
 
@@ -42,10 +51,10 @@
   padding: 26px 34px;
   box-sizing: $box-sizing;
   border: $border;
+  border-top: none;
 
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
-    border: 0;
+    padding:0 40px 40px;
   }
 }
 
@@ -53,6 +62,11 @@
   @include out-indents-reset;
   @include text-size (13px, 24px);
   margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(15px, 30px);
+    margin-bottom: 35px;
+  }
 }
 
 .video__btn {
