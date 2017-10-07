@@ -41,9 +41,8 @@
   box-sizing: border-box;
 
   @media screen and (min-width: $tablet-width) {
-    padding-right: 0;
-    padding-left: 0;
-    width: 668px;
+    padding: 0 50px;
+    width: 768px;
   }
 
   @media screen and (min-width: $desktop-width) {

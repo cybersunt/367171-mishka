@@ -30,22 +30,12 @@
   .inner-page {
     opacity: 0.8;
     background: #ffffff url("../bg/index-desktop.jpg") no-repeat 50% 0;
+    background: #ffffff url("../bg/catalog-desktop.jpg") no-repeat 50% 0;
   }
 }
 
 .inner-page__wrap {
-  box-sizing: border-box;
-  width: 320px;
-  margin: 0 auto;
-
-  @media screen and (min-width: $tablet-width) {
-    padding: 0 50px;
-    width: 768px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    width: 1150px;
-  }
+  @include container;
 }
 
 .inner-page__name {
@@ -62,6 +52,11 @@
     padding-top: 94px;
     margin-top: -62px;
     margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    min-height: 252px;
+    margin-bottom: 132px;
   }
 }
 

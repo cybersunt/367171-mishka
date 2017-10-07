@@ -1,6 +1,10 @@
 .video {
   margin-bottom: 60px;
   position: relative;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
 }
 
 .video__wrap {
@@ -8,6 +12,10 @@
   @include container;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .video__info {
@@ -17,6 +25,12 @@
   @media screen and (min-width: $tablet-width) {
     padding: 0 41px;
     padding-top: 37px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-left: 78px;
+    padding-right: 58px;
+    padding-top: 95px;
   }
 }
 
@@ -35,6 +49,10 @@
     margin-bottom: 0;
     margin-bottom: 33px;
   }
+
+    @media screen and (min-width: $desktop-width) {
+      padding: 0;
+    }
 }
 
 .video__text {
@@ -46,6 +64,10 @@
     @include text-size(15px, 30px);
     margin-bottom: 35px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .video__btn {
@@ -53,6 +75,10 @@
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 45px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 59px;
   }
 }
 

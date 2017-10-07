@@ -1,10 +1,14 @@
 @import "goods.scss";
 
 .catalog {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: $tablet-width) {
-    padding-bottom: 53px;
+    margin-bottom: 53px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 28px;
   }
 }
 
@@ -18,5 +22,6 @@
 
   @media screen and (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
