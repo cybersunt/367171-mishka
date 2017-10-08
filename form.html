@@ -36,7 +36,7 @@
     </header>
 
     <main class="main">
-      <section class="inner-page__name">
+      <section class="inner-page__name inner-page__name--form-order">
         <div class="inner-page__wrap">
           <h1 class="inner-page__title">Вязание на заказ</h1>
         </div>
@@ -79,25 +79,29 @@
               <div class="form-contacts__fullname">
                 <span class="order__title form-contacts__subtitle">ФИО</span>
                 <label for="name" class="order__subtitle form-contacts__label form-contacts__label--fullname">
-                  Имя
+                  <span>Имя</span>
                   <input class="order__input form-contacts__input" id="name" type="text" placeholder="Введите ваше имя*" required>
                 </label>
                 <label for="surname" class="order__subtitle form-contacts__label form-contacts__label--fullname">
-                  Фамилия
+                  <span>Фамилия</span>
                   <input class="order__input form-contacts__input" id="surname" type="text" placeholder="Укажите фамилию*" required>
                 </label>
                 <label for="patronymic" class="order__subtitle form-contacts__label form-contacts__label--fullname">
-                  Отчество
+                  <span>Отчество</span>
                   <input class="order__input form-contacts__input" id="patronymic" type="text" placeholder="Отчество, если желаете">
                 </label>
               </div>
               <div class="form-contacts__connections">
-                <label for="phone" class="order__title form-contacts__label form-contacts__label--title">Тел</label>
-                <input class="order__input form-contacts__input" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
-                <label for="email" class="order__title form-contacts__label form-contacts__label--title">E-mail</label>
-                <input class="order__input form-contacts__input" id="email" type="email" placeholder="Ваш Email*" required>
+                <p>
+                  <label for="phone" class="order__title form-contacts__label form-contacts__label--title">Тел</label>
+                  <input class="order__input form-contacts__input" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+                </p>
+                <p>
+                  <label for="email" class="order__title form-contacts__label form-contacts__label--title">E-mail</label>
+                  <input class="order__input form-contacts__input" id="email" type="email" placeholder="Ваш Email*" required>
+                </p>
               </div>
-              <label for="message" class="order__title form-contacts__label form-contacts__label--title">Доп</label>
+              <label for="message" class="order__title form-contacts__label form-contacts__label--title-message">Доп</label>
               <textarea class="order__textarea form-contacts__textarea" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </fieldset>
             <div class="order__checkout">

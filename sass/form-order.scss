@@ -1,8 +1,11 @@
 .form-order {
+  @include wrapper;
+  @include container;
   margin-bottom: 55px;
 }
 
 .form-order__text {
+  @include out-indents-reset;
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 25px;

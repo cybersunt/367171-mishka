@@ -1,0 +1,49 @@
+.form-contacts {
+  margin-bottom: 17px;
+}
+
+.form-contacts__fullname {
+  margin-bottom: 33px;
+}
+
+.form-contacts__subtitle {
+  display: block;
+  margin-bottom: 27px;
+}
+
+.form-contacts__label {
+  @include grid-col-row;
+  align-items: flex-start;
+  padding: 0;
+  width: 260px;
+  box-sizing: $box-sizing;
+  margin-bottom: 6px;
+
+  &--fullname {
+    margin-bottom: 22px;
+  }
+  &--title-message {
+    margin-bottom: 24px;
+  }
+}
+
+.form-contacts__connections {
+  margin-bottom: 34px;
+
+  & p {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}
+.form-contacts__input {
+  width: 260px;
+  height: 52px;
+  box-sizing: $box-sizing;
+}
+
+.form-contacts__textarea {
+  resize: none;
+  width: 260px;
+  box-sizing: $box-sizing;
+  height: 142px;
+}
