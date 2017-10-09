@@ -2,12 +2,6 @@
   margin-bottom: 55px;
 }
 
-.form-order__wrap {
-  @include wrapper;
-  @include container;
-  display: block;
-}
-
 .form-order__text {
   @include out-indents-reset;
   @include text-size (13px, 24px);
@@ -16,5 +10,15 @@
   @media screen and (min-width: $tablet-width) {
      @include text-size (17px, 30px);
      margin-bottom: 7px;
+  }
+}
+
+.form-order__wrap {
+  @include wrapper;
+  @include container;
+  display: block;
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 225px;
   }
 }

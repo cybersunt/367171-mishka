@@ -30,8 +30,18 @@
   @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-left: 114px;
+  }
+
+  &--check {
+    @media screen and (min-width: $desktop-width) {
+      padding: 0 224px;
+    }
   }
 }
 
@@ -41,7 +51,10 @@
 
   @media screen and (min-width: $tablet-width) {
     width: 520px;
-    // margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 895px;
   }
 }
 
@@ -58,6 +71,10 @@
     width: 148px;
     padding-top: 18px;
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 91px;
   }
 }
 
@@ -156,5 +173,6 @@
     width: 231px;
     padding: 14px 25px;
     order: -1;
+    margin-right: auto;
   }
 }

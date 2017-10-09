@@ -18,5 +18,9 @@
     margin-bottom: 23px;
     margin-right: 10px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
 }
 

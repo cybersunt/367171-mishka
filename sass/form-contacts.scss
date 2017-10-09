@@ -1,5 +1,9 @@
 .form-contacts {
   margin-bottom: 7px;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 3px;
+  }
 }
 
 .form-contacts__fullname {
@@ -24,34 +28,49 @@
   box-sizing: $box-sizing;
   margin-bottom: 6px;
 
+  @media screen and (min-width: $tablet-width) {
+    width: 520px;
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 720px;
+  }
+
   &--fullname {
     margin-bottom: 22px;
 
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 23px;
+    }
   }
 
   &--title-message {
     margin-bottom: 24px;
   }
 
-  @media screen and (min-width: $tablet-width) {
-    width: 520px;
-    padding-left: 20px;
-    margin-bottom: 0;
-
-    &--title {
+  &--title {
+    @media screen and (min-width: $tablet-width) {
       width: 168px;
       padding-left: 0;
       padding-top: 19px;
     }
 
-    &--title-message {
+    @media screen and (min-width: $desktop-width) {
+      width: 111px;
+    }
+  }
+
+  &--title-message {
+    @media screen and (min-width: $tablet-width) {
       width: 168px;
       padding-left: 0;
       padding-top: 18px;
     }
 
-    &--fullname {
-    margin-bottom: 23px;
+    @media screen and (min-width: $desktop-width) {
+      width: 111px;
     }
   }
 }
@@ -66,6 +85,10 @@
     &--name {
       width: 47px;
     }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 28px;
   }
 }
 
@@ -90,27 +113,46 @@
   height: 52px;
   box-sizing: $box-sizing;
 
-  &--phone {
-    margin-bottom: 33px;
-  }
-
   @media screen and (min-width: $tablet-width) {
     width: 500px;
+  }
 
-    &--name {
+  @media screen and (min-width: $desktop-width) {
+    width: 700px;
+    margin-right: 100px;
+  }
+
+  &--phone {
+    margin-bottom: 33px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--email {
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--name {
+    @media screen and (min-width: $tablet-width) {
       width: 428px;
     }
 
-    &--surname {
+    @media screen and (min-width: $desktop-width) {
+      width: 628px;
+    }
+  }
+
+  &--surname {
+    @media screen and (min-width: $tablet-width) {
       width: 400px;
     }
 
-    &--phone {
-      margin-bottom: 25px;
-    }
-
-    &--email {
-      margin-bottom: 25px;
+    @media screen and (min-width: $desktop-width) {
+      width: 600px;
     }
   }
 }
@@ -123,5 +165,9 @@
 
   @media screen and (min-width: $tablet-width) {
     width: 500px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 700px;
   }
 }
