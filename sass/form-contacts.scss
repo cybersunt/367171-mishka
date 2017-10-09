@@ -1,9 +1,14 @@
 .form-contacts {
-  margin-bottom: 17px;
+  margin-bottom: 7px;
 }
 
 .form-contacts__fullname {
-  margin-bottom: 33px;
+  margin-bottom: 11px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include form-decor;
+    margin-bottom: 2px;
+  }
 }
 
 .form-contacts__subtitle {
@@ -21,24 +26,93 @@
 
   &--fullname {
     margin-bottom: 22px;
+
   }
+
   &--title-message {
     margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 520px;
+    padding-left: 20px;
+    margin-bottom: 0;
+
+    &--title {
+      width: 168px;
+      padding-left: 0;
+      padding-top: 19px;
+    }
+
+    &--title-message {
+      width: 168px;
+      padding-left: 0;
+      padding-top: 18px;
+    }
+
+    &--fullname {
+    margin-bottom: 23px;
+    }
+  }
+}
+
+.form-contacts__field-name {
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    width: 100px;
+    margin-right: 25px;
+    padding-top: 15px;
+
+    &--name {
+      width: 47px;
+    }
   }
 }
 
 .form-contacts__connections {
   margin-bottom: 34px;
 
-  & p {
-    margin: 0;
-    margin-bottom: 32px;
+  @media screen and (min-width: $tablet-width) {
+    @include form-decor ($form-bg);
+    margin-bottom: 0;
   }
 }
+
+.form-contacts__message {
+  @media screen and (min-width: $tablet-width) {
+    @include form-decor;
+    margin-bottom: 21px
+  }
+}
+
 .form-contacts__input {
   width: 260px;
   height: 52px;
   box-sizing: $box-sizing;
+
+  &--phone {
+    margin-bottom: 33px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 500px;
+
+    &--name {
+      width: 428px;
+    }
+
+    &--surname {
+      width: 400px;
+    }
+
+    &--phone {
+      margin-bottom: 25px;
+    }
+
+    &--email {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .form-contacts__textarea {
@@ -46,4 +120,8 @@
   width: 260px;
   box-sizing: $box-sizing;
   height: 142px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 500px;
+  }
 }

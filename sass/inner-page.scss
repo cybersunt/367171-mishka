@@ -18,14 +18,15 @@
   }
 }
 
-// @media screen and (min-width: $tablet-width) {
-//   .inner-page {
-//     opacity: 0.8;
-//     background: #ffffff url("../bg/index-tablet.jpg") no-repeat 50% 0;
-//     background: #ffffff url("../bg/catalog-tablet.jpg") no-repeat 50% 0;
-//     background-size: 768px auto;
-//   }
-// }
+@media screen and (min-width: $tablet-width) {
+  .inner-page {
+    opacity: 0.8;
+    background: #ffffff url("../bg/index-tablet.jpg") no-repeat 50% 0;
+    background: #ffffff url("../bg/catalog-tablet.jpg") no-repeat 50% 0;
+    background: #ffffff url("../bg/form-tablet.jpg") no-repeat 50% 0;
+    background-size: 768px auto;
+  }
+}
 
 // @media screen and (min-width: $desktop-width) {
 //   .inner-page {
@@ -47,10 +48,6 @@
   margin-bottom: 30px;
   background-color: #f1f1f1;
 
-  &--form-order {
-    margin-bottom: 23px;
-  }
-
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
     min-height: 225px;
@@ -62,6 +59,14 @@
   @media screen and (min-width: $desktop-width) {
     min-height: 252px;
     margin-bottom: 132px;
+  }
+
+  &--form-order {
+    margin-bottom: 23px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 73px;
+    }
   }
 }
 
@@ -98,7 +103,9 @@
   text-align: center;
 
   @media screen and (min-width: $tablet-width) {
+    @include int-indents-reset;
     @include text-size(43px, 50px);
+    width: 100%;
   }
 
   @media screen and (min-width: $desktop-width) {

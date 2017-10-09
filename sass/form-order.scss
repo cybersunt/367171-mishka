@@ -1,12 +1,20 @@
 .form-order {
+  margin-bottom: 55px;
+}
+
+.form-order__wrap {
   @include wrapper;
   @include container;
-  margin-bottom: 55px;
+  display: block;
 }
 
 .form-order__text {
   @include out-indents-reset;
-  font-size: 13px;
-  line-height: 24px;
+  @include text-size (13px, 24px);
   margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet-width) {
+     @include text-size (17px, 30px);
+     margin-bottom: 7px;
+  }
 }
