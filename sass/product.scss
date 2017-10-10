@@ -5,9 +5,8 @@
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
     @include vert-padding (112px, 0);
-
     margin-bottom: 50px;
- }
+  }
 
   @media screen and (min-width: $desktop-width) {
     padding-top: 0;

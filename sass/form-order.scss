@@ -8,8 +8,8 @@
   margin-bottom: 25px;
 
   @media screen and (min-width: $tablet-width) {
-     @include text-size (17px, 30px);
-     margin-bottom: 7px;
+    @include text-size (17px, 30px);
+    margin-bottom: 7px;
   }
 }
 
