@@ -6,17 +6,21 @@
     @include int-indents-reset;
     padding-top: 66px;
     margin-bottom: 23px;
-    // @include vert-padding (52px, 21px);
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-bottom: 26px;
+    padding-top: 84px;
+    margin-bottom: 30px;
   }
 }
 
 .features__wrap {
   @include wrapper;
   @include container;
+
+  @media screen and (min-width: $desktop-width) {
+    @include left-wrap;
+  }
 }
 
 .features__title {
@@ -32,7 +36,6 @@
 
   @media screen and (min-width: $desktop-width) {
     @include text-size(53px, 57px);
-    @include left-wrap;
   }
 }
 
@@ -45,9 +48,9 @@
     flex-direction: row;
   }
 
-  @media screen and (min-width: $desktop-width) {
-    justify-content: center;
-  }
+  // @media screen and (min-width: $desktop-width) {
+  //   justify-content: center;
+  // }
 }
 
 .features__list {

@@ -4,16 +4,24 @@
   @media screen and (min-width: $tablet-width) {
     min-height: 750px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .promo__links {
   min-height: 180px;
 
   @media screen and (min-width: $tablet-width) {
-    min-height: 315px;
+    min-height: 313px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    min-height: 308px;
   }
 }
 
@@ -24,9 +32,11 @@
 
 .promo__links-wrap {
   @include int-indents-reset;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -47,7 +57,6 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    min-height: 566px;
     padding-left: 217px;
     padding-right: 217px;
   }
@@ -58,20 +67,24 @@
 }
 
 .promo__item {
+  box-sizing: $box-sizing;
+  min-height: 103px;
   padding-top: 25px;
   padding-bottom: 30px;
   padding-right: 115px;
 
   @media screen and (min-width: $tablet-width) {
-    width: 334px;
+    width: 50%;
+    min-height: 106px;
     padding-top: 28px;
     padding-left: 36px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: 185px;
+    min-height: 103px;
     padding-right: 305px;
+    padding-bottom: 13px;
   }
 
   &--interior-items {
