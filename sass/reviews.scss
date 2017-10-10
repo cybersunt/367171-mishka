@@ -1,27 +1,28 @@
 .reviews {
-  @include wrapper;
-  @include vert-padding (16px, 45px);
-  border-bottom: 10px solid #ececec;
+  margin-bottom: 43px;
 
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
     @include vert-padding (79px, 67px);
     position: relative;
-    border-bottom: 20px solid #ececec;
   }
 
   @media screen and (min-width: $desktop-width) {
     @include left-wrap;
     @include vert-padding (73px, 111px);
-    border-bottom: 30px solid #ececec;
   }
 }
 
+.reviews__wrap {
+  @include wrapper;
+  @include container;
+}
+
 .reviews__list {
-  padding-bottom: 37px;
+  margin-bottom: 37px;
 
   @media screen and (min-width: $tablet-width) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -32,10 +33,10 @@
 
 .reviews__item {
   @include out-indents-reset;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: $tablet-width) {
-    padding-bottom: 46px;
+    margin-bottom: 46px;
   }
 }
 
@@ -44,12 +45,11 @@
   @include text-color;
   @include out-indents-reset;
   font-weight: 700;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
-    padding-bottom: 50px;
-    padding-right: 180px;
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -59,14 +59,14 @@
 
 .reviews__text {
   @include out-indents-reset;
-  padding-bottom: 27px;
+  margin-bottom: 27px;
 
   @media screen and (min-width: $tablet-width) {
-    padding-bottom: 56px;
+    margin-bottom: 56px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-bottom: 37px;
+    margin-bottom: 37px;
   }
 }
 
@@ -75,11 +75,11 @@
   @include text-size (17px, 24px);
   @include text-color;
   font-weight: 700;
-  padding-bottom: 3px;
+  margin-bottom: 3px;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 18px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
   }
 }
 
