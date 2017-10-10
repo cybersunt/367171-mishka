@@ -46,13 +46,12 @@
     @include text-size(20px, 24px);
     @include int-indents-reset;
     padding-left: 65px;
-    margin-bottom: 0;
     margin-bottom: 33px;
   }
 
-    @media screen and (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
       padding: 0;
-    }
+  }
 }
 
 .video__text {

@@ -20,17 +20,12 @@
   @include container;
   position: relative;
 
-
   @media screen and (min-width: $desktop-width) {
     @include left-wrap;
   }
 
   &--maps {
     @include int-indents-reset;
-
-    @media screen and (min-width: $desktop-width) {
-
-    }
   }
 }
 
@@ -171,7 +166,6 @@
 }
 
 .contacts__btn {
-
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
     width: 231px;

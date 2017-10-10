@@ -46,10 +46,6 @@
     }
   }
 
-  &--title-message {
-    margin-bottom: 24px;
-  }
-
   &--title {
     @media screen and (min-width: $tablet-width) {
       width: 168px;
@@ -63,6 +59,8 @@
   }
 
   &--title-message {
+    margin-bottom: 24px;
+
     @media screen and (min-width: $tablet-width) {
       width: 168px;
       padding-left: 0;

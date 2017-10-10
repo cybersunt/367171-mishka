@@ -87,7 +87,7 @@
   }
 }
 
-@mixin form-decor ($bg-color: transparent){
+@mixin form-decor ($bg-color: transparent) {
   padding-top: 50px;
   padding-bottom: 25px;
   background-color: $bg-color;
