@@ -3,19 +3,22 @@
 
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
-    @include vert-padding (79px, 67px);
+    @include vert-padding (77px, 47px)
+    margin-bottom: 67px;
     position: relative;
   }
 
   @media screen and (min-width: $desktop-width) {
     @include left-wrap;
-    @include vert-padding (73px, 111px);
+    padding-top: 73px;
+    margin-bottom: 111px;
   }
 }
 
 .reviews__wrap {
   @include wrapper;
   @include container;
+  position: relative;
 }
 
 .reviews__list {
@@ -36,7 +39,7 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 0;
   }
 }
 
@@ -93,8 +96,8 @@
 
   @media screen and (min-width: $tablet-width) {
     position: absolute;
-    bottom: 117px;
-    right: 7px;
+    bottom: 5px;
+    right: 55px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -121,7 +124,7 @@
 .reviews__btn {
   @media screen and (min-width: $tablet-width) {
     position: absolute;
-    top: 80px;
-    right: 0;
+    top: 2px;
+    right: 50px;
   }
 }

@@ -4,7 +4,8 @@
 
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
-    padding-top: 52px;
+    padding-top: 66px;
+    margin-bottom: 23px;
     // @include vert-padding (52px, 21px);
   }
 

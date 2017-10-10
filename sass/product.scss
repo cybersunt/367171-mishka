@@ -3,9 +3,9 @@
 
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
-    @include vert-padding (50px, 0);
+    @include vert-padding (14px, 0);
 
-    margin-bottom: 45px;
+    margin-bottom: 50px;
  }
 
   @media screen and (min-width: $desktop-width) {
@@ -18,15 +18,20 @@
 .product__wrap {
   @include wrapper;
   @include container;
+  @include grid-col-row;
+  position: relative;
 }
 
 .product__title {
+  @include wrapper;
+  @include container;
   @include text-size (25px, 30px);
   @include text-color (#000000);
   margin-bottom: 18px;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
+    margin-bottom: 49px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -54,7 +59,9 @@
 
   @media screen and (min-width: $tablet-width) {
     // margin-top: 49px;
+    height: inherit;
     width: 290px;
+    margin-right: 44px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -83,7 +90,7 @@
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(15px, 20px);
-    margin-bottom: 58px;
+    margin-bottom: 57px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -97,12 +104,14 @@
   padding: 10px 0 9px;
 }
 
-.product__img {
-  // @media screen and (min-width: $tablet-width) {
-  //   position: absolute;
-  //   top: 0;
-  //   right: -378px;
-  // }
+.product__img-link {
+  position: absolute;
+  bottom: 115px;
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    top: 10px;
+  }
 
   // @media screen and (min-width: $desktop-width) {
   //   top: -159px;
@@ -114,7 +123,10 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  // margin-top: 15px;
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .product__price {

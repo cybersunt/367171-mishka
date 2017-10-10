@@ -1,5 +1,9 @@
-.production__list {
+.promo__list {
   min-height: 180px;
+}
+
+.promo__wrap {
+  @include int-indents-reset;
 
   @media screen and (min-width: $tablet-width) {
     min-height: 118px;
@@ -7,8 +11,7 @@
   }
 }
 
-.production__item {
-  @include wrapper;
+.promo__item {
   padding-top: 25px;
   padding-bottom: 30px;
   padding-right: 115px;
@@ -34,7 +37,7 @@
   }
 }
 
-.production__link {
+.promo__link {
   @include link-reset;
   @include text-size (19px, 24px);
   @include text-color (#ffffff);

@@ -4,7 +4,7 @@
   position: relative;
 
   @media screen and (min-width: $tablet-width) {
-    @include vert-padding (59px, 57px);
+    padding-top: 78px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -16,9 +16,13 @@
 
 .contacts__wrap {
   @include wrapper;
+  @include container;
 
   &--maps {
     @include int-indents-reset;
+
+    @media screen and (min-width: $tablet-width) {
+    }
   }
 }
 
@@ -31,7 +35,7 @@
   @media screen and (min-width: $tablet-width) {
     @include int-indents-reset;
     @include text-size(43px, 50px);
-    padding-right: 60px;
+    margin-bottom: 47px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -46,7 +50,6 @@
 
   @media screen and (min-width: $tablet-width) {
     @include out-indents-reset;
-    margin-top: 47px;
     margin-bottom: 55px;
   }
 
@@ -86,7 +89,7 @@
     }
 
     &:nth-child(2n) {
-      width: 254px;
+      width: 256px;
     }
   }
 
@@ -125,10 +128,7 @@
   margin-bottom: 38px;
 
   @media screen and (min-width: $tablet-width) {
-    width: 768px;
     margin-bottom: 53px;
-    margin-left: -50px;
-    margin-right: -50px;
   }
 
   @media screen and (min-width: $desktop-width) {
