@@ -7,35 +7,35 @@
   min-width: 320px;
 
   // Временно для построяния сетки
-  background: #ffffff url("../bg/index-mobile.jpg") no-repeat 50% 0;
+  // background: #ffffff url("../bg/index-mobile.jpg") no-repeat 50% 0;
   // background: #ffffff url("../bg/catalog-mobile.jpg") no-repeat 50% 0;
   // background: #ffffff url("../bg/form-mobile.jpg") no-repeat 50% 0;
-  opacity: 0.8;
-  background-size: 320px auto;
+  // opacity: 0.8;
+  // background-size: 320px auto;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 17px;
   }
 }
 
-@media screen and (min-width: $tablet-width) {
-  .inner-page {
-    opacity: 0.8;
-    background: #ffffff url("../bg/index-tablet.jpg") no-repeat 50% 0;
-    // background: #ffffff url("../bg/catalog-tablet.jpg") no-repeat 50% 0;
-    // background: #ffffff url("../bg/form-tablet.jpg") no-repeat 50% 0;
-    background-size: 768px auto;
-  }
-}
+// @media screen and (min-width: $tablet-width) {
+//   .inner-page {
+//     opacity: 0.8;
+//     background: #ffffff url("../bg/index-tablet.jpg") no-repeat 50% 0;
+//     background: #ffffff url("../bg/catalog-tablet.jpg") no-repeat 50% 0;
+//     background: #ffffff url("../bg/form-tablet.jpg") no-repeat 50% 0;
+//     background-size: 768px auto;
+//   }
+// }
 
-@media screen and (min-width: $desktop-width) {
-  .inner-page {
-    opacity: 0.8;
-    background: #ffffff url("../bg/index-desktop.jpg") no-repeat 50% 0;
-    // background: #ffffff url("../bg/catalog-desktop.jpg") no-repeat 50% 0;
-    // background: #ffffff url("../bg/form-desktop.jpg") no-repeat 50% 0;
-  }
-}
+// @media screen and (min-width: $desktop-width) {
+//   .inner-page {
+//     opacity: 0.8;
+//     background: #ffffff url("../bg/index-desktop.jpg") no-repeat 50% 0;
+//     background: #ffffff url("../bg/catalog-desktop.jpg") no-repeat 50% 0;
+//     background: #ffffff url("../bg/form-desktop.jpg") no-repeat 50% 0;
+//   }
+// }
 
 .inner-page__wrap {
   @include wrapper;
