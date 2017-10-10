@@ -102,7 +102,7 @@
 .form-contacts__message {
   @media screen and (min-width: $tablet-width) {
     @include form-decor;
-    margin-bottom: 21px
+    margin-bottom: 21px;
   }
 }
 

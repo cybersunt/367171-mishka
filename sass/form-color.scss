@@ -8,8 +8,8 @@
 }
 
 .form-color__label {
+  @include vert-padding (11px, 11px);
   box-sizing: $box-sizing;
-  @include vert-padding(11px, 11px);
   margin-bottom: 21px;
 
   @media screen and (min-width: $tablet-width) {

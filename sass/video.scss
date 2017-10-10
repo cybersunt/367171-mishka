@@ -50,7 +50,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-      padding: 0;
+    @include int-indents-reset;
   }
 }
 
