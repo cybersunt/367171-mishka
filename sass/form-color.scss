@@ -1,0 +1,25 @@
+.form-color {
+  margin-bottom: 11px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include form-decor ($form-bg);
+    margin-bottom: 0;
+  }
+}
+
+.form-color__label {
+  @include vert-padding (11px, 11px);
+  box-sizing: $box-sizing;
+  margin-bottom: 21px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include vert-padding(14px, 22px);
+    width: 250px;
+    margin-bottom: 23px;
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
+}

@@ -1,17 +1,110 @@
 .video {
   margin-bottom: 60px;
+  position: relative;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
+}
+
+.video__wrap {
+  @include wrapper;
+  @include container;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.video__info {
+  border: $border;
+  padding: 0 33px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 41px;
+    padding-top: 37px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-left: 78px;
+    padding-right: 58px;
+    padding-top: 95px;
+  }
 }
 
 .video__title {
   @include text-decoration;
+  padding-top: 23px;
+  padding-left: 57px;
+  padding-bottom: 23px;
+  padding-right: 30px;
+  margin-bottom: 178px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(20px, 24px);
+    @include int-indents-reset;
+    padding-left: 65px;
+    margin-bottom: 33px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    @include int-indents-reset;
+  }
 }
 
 .video__text {
-  font-size: 13px;
+  @include out-indents-reset;
+  @include text-size (13px, 24px);
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(15px, 30px);
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .video__btn {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
+}
+
+.video__btn-link {
   @include text-size (17px, 16px);
   @include text-color;
   font-weight: 700;
+  padding: 16px;
+}
+
+.video__player {
+  position: absolute;
+  top: 96px;
+
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+    height: 455px;
+  }
+}
+
+.video__img {
+  display: block;
+}
+
+.video__start-btn {
+  position: absolute;
+  top: 42px;
+  left: 86px;
 }

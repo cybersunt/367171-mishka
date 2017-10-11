@@ -1,7 +1,61 @@
 .order__fieldset {
   @include int-indents-reset;
+  @include out-indents-reset;
+  @include grid-col-row;
+  box-sizing: $box-sizing;
   border: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 0;
+    // Временно для сетки
+    // &:nth-child(1) {
+    //   height: 211px;
+    // }
+
+    // &:nth-child(2) {
+    //   height: 385px;
+    // }
+
+    // &:nth-child(3) {
+    //   height: 725px;
+    // }
+  }
+}
+
+.order__wrap {
+  @include wrapper;
+  @include container;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-left: 114px;
+  }
+
+  &--check {
+    @media screen and (min-width: $desktop-width) {
+      padding: 0 224px;
+    }
+  }
+}
+
+.order__fields {
+  @include grid-col-row;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 520px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 895px;
+  }
 }
 
 .order__title {
@@ -10,12 +64,35 @@
   font-weight: 700;
 
   text-transform: uppercase;
+  margin-bottom: 24px;
+  display: block;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 148px;
+    padding-top: 18px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 91px;
+  }
 }
 
 .order__subtitle {
   @include text-size(17px, 18px);
   @include text-color;
   font-weight: 700;
+  box-sizing: $box-sizing;
+  width: 260px;
+  padding-left: 64px;
+  padding-top: 9px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 19px;
+    padding-top: 15px;
+    padding-left: 100px;
+  }
 }
 
 .order__input {
@@ -70,5 +147,32 @@
 }
 
 .order__comment {
+  @include out-indents-reset;
   @include text-size(14px, 16px);
+  margin-bottom: 31px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(17px, 30px);
+    margin-bottom: 0;
+    align-self: center;
+  }
+}
+
+.order__radio {
+  @include radio-checkbox;
+}
+
+.order__checkbox {
+  @include radio-checkbox;
+}
+
+.order__btn {
+  width: 100%;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 231px;
+    padding: 14px 25px;
+    order: -1;
+    margin-right: auto;
+  }
 }

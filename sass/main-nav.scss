@@ -1,6 +1,88 @@
 @import "menu-list.scss";
 @import "user-list.scss";
 
+.main-nav {
+  height: 80px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+
+  @media screen and (min-width: $tablet-width) {
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 0;
+  }
+}
+
+.main-nav__logo {
+  margin-right: 68px;
+
+  @media screen and (min-width: $tablet-width) {
+    height: 90px;
+    width: 320px;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    order: 1;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.main-nav__show {
+  display: block;
+}
+
 .main-nav__list {
   @include list-reset;
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 445px;
+  }
+}
+
+
+.main-nav__toggle {
+  background-color: #ffffff;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 20px;
+  height: 14px;
+  border: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__note {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(15px, 24px);
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    right: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    bottom: 20px;
+  }
 }

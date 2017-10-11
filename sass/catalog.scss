@@ -2,8 +2,26 @@
 
 .catalog {
   margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 28px;
+  }
+}
+
+.catalog__wrap {
+  @include wrapper;
+  @include container;
 }
 
 .catalog__list {
   @include list-reset;
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

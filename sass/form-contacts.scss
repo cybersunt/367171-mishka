@@ -1,0 +1,171 @@
+.form-contacts {
+  margin-bottom: 7px;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 3px;
+  }
+}
+
+.form-contacts__fullname {
+  margin-bottom: 11px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include form-decor;
+    margin-bottom: 2px;
+  }
+}
+
+.form-contacts__subtitle {
+  display: block;
+  margin-bottom: 27px;
+}
+
+.form-contacts__label {
+  @include grid-col-row;
+  align-items: flex-start;
+  padding: 0;
+  width: 260px;
+  box-sizing: $box-sizing;
+  margin-bottom: 6px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 520px;
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 720px;
+  }
+
+  &--fullname {
+    margin-bottom: 22px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &--title {
+    @media screen and (min-width: $tablet-width) {
+      width: 168px;
+      padding-left: 0;
+      padding-top: 19px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 111px;
+    }
+  }
+
+  &--title-message {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 168px;
+      padding-left: 0;
+      padding-top: 18px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 111px;
+    }
+  }
+}
+
+.form-contacts__field-name {
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    width: 100px;
+    margin-right: 25px;
+    padding-top: 15px;
+
+    &--name {
+      width: 47px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 28px;
+  }
+}
+
+.form-contacts__connections {
+  margin-bottom: 34px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include form-decor ($form-bg);
+    margin-bottom: 0;
+  }
+}
+
+.form-contacts__message {
+  @media screen and (min-width: $tablet-width) {
+    @include form-decor;
+    margin-bottom: 21px;
+  }
+}
+
+.form-contacts__input {
+  width: 260px;
+  height: 52px;
+  box-sizing: $box-sizing;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 700px;
+    margin-right: 100px;
+  }
+
+  &--phone {
+    margin-bottom: 33px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--email {
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--name {
+    @media screen and (min-width: $tablet-width) {
+      width: 428px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 628px;
+    }
+  }
+
+  &--surname {
+    @media screen and (min-width: $tablet-width) {
+      width: 400px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 600px;
+    }
+  }
+}
+
+.form-contacts__textarea {
+  resize: none;
+  width: 260px;
+  box-sizing: $box-sizing;
+  height: 142px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 700px;
+  }
+}

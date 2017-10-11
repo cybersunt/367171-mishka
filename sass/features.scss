@@ -1,9 +1,56 @@
 .features {
-  margin-bottom: 50px;
+  padding-top: 35px;
+  margin-bottom: 27px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include int-indents-reset;
+    padding-top: 66px;
+    margin-bottom: 23px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 84px;
+    margin-bottom: 30px;
+  }
+}
+
+.features__wrap {
+  @include wrapper;
+  @include container;
+
+  @media screen and (min-width: $desktop-width) {
+    @include left-wrap;
+  }
 }
 
 .features__title {
   @include text-size (25px, 30px);
+  @include text-color;
+  @include out-indents-reset;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(43px, 50px);
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    @include text-size(53px, 57px);
+  }
+}
+
+.features__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  // @media screen and (min-width: $desktop-width) {
+  //   justify-content: center;
+  // }
 }
 
 .features__list {
@@ -11,4 +58,33 @@
   @include text-size (17px, 20px);
   @include text-color;
   font-weight: 700;
+
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(20px, 22px);
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
+// Временно для составления сетки
+.features__img {
+  display: block;
+  margin-bottom: 23px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
 }

@@ -3,7 +3,22 @@
 }
 
 .form-order__text {
-  font-size: 13px;
-  line-height: 24px;
+  @include out-indents-reset;
+  @include text-size (13px, 24px);
   margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include text-size (17px, 30px);
+    margin-bottom: 7px;
+  }
+}
+
+.form-order__wrap {
+  @include wrapper;
+  @include container;
+  display: block;
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
 }

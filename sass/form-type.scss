@@ -1,0 +1,19 @@
+.form-type {
+  @media screen and (min-width: $tablet-width) {
+    @include form-decor;
+  }
+}
+
+// .form-type__title {
+//   @media screen and (min-width: $tablet-width) {
+//     padding-top: 17px;
+//   }
+// }
+
+.form-type__label {
+  @media screen and (min-width: $tablet-width) {
+    width: 500px;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+  }
+}
