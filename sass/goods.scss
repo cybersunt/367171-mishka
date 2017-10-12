@@ -78,7 +78,7 @@
 }
 
 .goods__title {
-  @include out-indents-reset;
+  @include reset-margin;
   display: inline-flex;
   vertical-align: top;
   margin-bottom: 4px;

@@ -9,7 +9,7 @@
   box-sizing: border-box;
 
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include reset-padding;
     min-height: 143px;
   }
 }

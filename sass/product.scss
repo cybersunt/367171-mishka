@@ -3,7 +3,7 @@
   position: relative;
 
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include reset-padding;
     @include vert-padding (112px, 0);
     margin-bottom: 50px;
   }
@@ -34,7 +34,7 @@
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
-    @include int-indents-reset;
+    @include reset-padding;
     position: absolute;
     margin-bottom: 0;
     top: -98px;
@@ -79,7 +79,7 @@
 }
 
 .product__text {
-  @include out-indents-reset;
+  @include reset-margin;
   line-height: 24px;
   margin-bottom: 17px;
 

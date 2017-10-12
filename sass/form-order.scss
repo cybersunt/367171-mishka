@@ -3,7 +3,7 @@
 }
 
 .form-order__text {
-  @include out-indents-reset;
+  @include reset-margin;
   @include text-size (13px, 24px);
   margin-bottom: 25px;
 

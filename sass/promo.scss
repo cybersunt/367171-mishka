@@ -42,7 +42,7 @@
 }
 
 .promo__links-wrap {
-  @include int-indents-reset;
+  @include reset-padding;
   display: flex;
   flex-direction: column;
 
@@ -63,7 +63,7 @@
   min-height: 282px;
 
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include reset-padding;
     min-height: 420px;
     padding-top: 153px;
     background-image: none;

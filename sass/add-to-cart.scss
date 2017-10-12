@@ -7,13 +7,13 @@
   margin: 0 auto;
 
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include reset-padding;
     padding: 53px 100px 46px;
   }
 }
 
 .add-to-cart__title {
-  @include out-indents-reset;
+  @include reset-margin;
   @include text-size (25px, 30px);
   @include text-color;
   padding-left: 85px;
@@ -24,7 +24,7 @@
   text-align: center;
 
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include reset-padding;
     @include text-size (30px, 57px);
     min-width: 350px;
     margin-bottom: 30px;

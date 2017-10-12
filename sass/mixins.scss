@@ -6,14 +6,14 @@
   padding: 0;
 }
 
-@mixin out-indents-reset {
+@mixin reset-margin {
   margin: 0;
 }
 
-@mixin int-indents-reset {
+@mixin reset-padding {
   padding: 0;
 }
-
+p
 @mixin vert-padding ($padding-top, $padding-bottom) {
   padding-top: $padding-top;
   padding-bottom: $padding-bottom;

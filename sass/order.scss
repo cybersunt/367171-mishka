@@ -1,6 +1,6 @@
 .order__fieldset {
-  @include int-indents-reset;
-  @include out-indents-reset;
+  @include reset-padding;
+  @include reset-margin;
   @include grid-col-row;
   box-sizing: $box-sizing;
   border: 0;
@@ -147,7 +147,7 @@
 }
 
 .order__comment {
-  @include out-indents-reset;
+  @include reset-margin;
   @include text-size(14px, 16px);
   margin-bottom: 31px;
 

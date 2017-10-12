@@ -15,8 +15,8 @@
   @include wrapper;
   @include container;
 
-  &--index {
-    padding-bottom: 121px;
+  &--form {
+    @include reset-padding;
   }
 }
 
@@ -29,7 +29,7 @@
   background-color: #f1f1f1;
 
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include reset-padding;
     min-height: 225px;
     padding-top: 94px;
     margin-top: -62px;
@@ -59,7 +59,7 @@
 }
 
 .inner-page__title-second {
-  @include out-indents-reset;
+  @include reset-margin;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);

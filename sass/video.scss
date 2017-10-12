@@ -44,18 +44,18 @@
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(20px, 24px);
-    @include int-indents-reset;
+    @include reset-padding;
     padding-left: 65px;
     margin-bottom: 33px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    @include int-indents-reset;
+    @include reset-padding;
   }
 }
 
 .video__text {
-  @include out-indents-reset;
+  @include reset-margin;
   @include text-size (13px, 24px);
   margin-bottom: 25px;
 

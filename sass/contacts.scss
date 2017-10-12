@@ -25,7 +25,7 @@
   }
 
   &--maps {
-    @include int-indents-reset;
+    @include reset-padding;
   }
 }
 
@@ -39,8 +39,8 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    @include int-indents-reset;
-    @include out-indents-reset;
+    @include reset-padding;
+    @include reset-margin;
   }
 }
 
@@ -51,7 +51,7 @@
   margin-bottom: 26px;
 
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include reset-padding;
     @include text-size(43px, 50px);
     margin-bottom: 47px;
   }
@@ -69,7 +69,7 @@
   width: auto;
 
   @media screen and (min-width: $tablet-width) {
-    @include out-indents-reset;
+    @include reset-margin;
     margin-bottom: 55px;
   }
 
@@ -167,7 +167,7 @@
 
 .contacts__btn {
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include reset-padding;
     width: 231px;
     margin: 0 auto;
   }
