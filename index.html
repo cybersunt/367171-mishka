@@ -15,7 +15,11 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__logo">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="http://placehold.it/149x72">
+              <source media="(min-width: 768px)" srcset="http://placehold.it/113x46">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Мишка">
+            </picture>
           </div>
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item"><a class="menu-list__link" href="catalog.html">Каталог товаров</a></li>
@@ -197,9 +201,9 @@
 
     <footer class="footer">
       <div class="footer__wrap inner-page__wrap">
-        <div class="footer__logo">
-          <img class="footer__logo-image" src="http://placehold.it/110x35" width="110" height="35" alt="Мишка">
-        </div>
+        <a class="footer__logo">
+          <img class="footer__logo-image" src="http://placehold.it/102x34" width="102" height="34" alt="Мишка">
+        </a>
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -232,7 +236,7 @@
       </div>
     </footer>
 
-    <div class="overlay inner-page__wrap">
+    <div class="overlay inner-page__wrap inner-page__wrap--form">
       <section class="add-to-cart">
         <h3 class="add-to-cart__title">Добавить в корзину</h3>
         <form class="add-to-cart__form"  action="https://echo.htmlacademy.ru" method="post">

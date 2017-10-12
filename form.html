@@ -14,7 +14,11 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <a class="main-nav__logo" href="index.html">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="http://placehold.it/149x72">
+              <source media="(min-width: 768px)" srcset="http://placehold.it/113x46">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Мишка">
+            </picture>
           </a>
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item"><a class="menu-list__link" href="catalog.html">Каталог товаров</a></li>
@@ -132,9 +136,9 @@
 
     <footer class="footer">
       <div class="footer__wrap">
-        <div class="footer__logo">
-          <img class="footer__logo-image" src="http://placehold.it/110x35" width="110" height="35" alt="Мишка">
-        </div>
+        <a class="footer__logo">
+          <img class="footer__logo-image" src="http://placehold.it/102x34" width="102" height="34" alt="Мишка">
+        </a>
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
