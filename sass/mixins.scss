@@ -31,6 +31,27 @@
   font-weight: 700;
 }
 
+@mixin title-first {
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 43px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
 @mixin link-hover {
   color: #8d8d8d;
 }

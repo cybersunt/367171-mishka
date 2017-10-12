@@ -94,7 +94,7 @@
   margin-bottom: 34px;
 
   @media screen and (min-width: $tablet-width) {
-    @include form-decor ($form-bg);
+    @include form-decor ($bg-color);
     margin-bottom: 0;
   }
 }

@@ -2,9 +2,10 @@
 @import "fonts.scss";
 @import "visually-hidden.scss";
 @import "variables.scss";
+@import "../bg/bg.scss";
 @import "mixins.scss";
-@import "header.scss";
 @import "inner-page.scss";
+@import "header.scss";
 @import "main-nav.scss";
 @import "promo.scss";
 @import "btn.scss";
@@ -22,4 +23,3 @@
 @import "form-type.scss";
 @import "form-color.scss";
 @import "form-contacts.scss";
-// @import "outline.scss";

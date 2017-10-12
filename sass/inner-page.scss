@@ -6,36 +6,10 @@
   background-color: #ffffff;
   min-width: 320px;
 
-  // Временно для построяния сетки
-  // background: #ffffff url("../bg/index-mobile.jpg") no-repeat 50% 0;
-  // background: #ffffff url("../bg/catalog-mobile.jpg") no-repeat 50% 0;
-  // background: #ffffff url("../bg/form-mobile.jpg") no-repeat 50% 0;
-  // opacity: 0.8;
-  // background-size: 320px auto;
-
   @media screen and (min-width: $tablet-width) {
     font-size: 17px;
   }
 }
-
-// @media screen and (min-width: $tablet-width) {
-//   .inner-page {
-//     opacity: 0.8;
-//     background: #ffffff url("../bg/index-tablet.jpg") no-repeat 50% 0;
-//     background: #ffffff url("../bg/catalog-tablet.jpg") no-repeat 50% 0;
-//     background: #ffffff url("../bg/form-tablet.jpg") no-repeat 50% 0;
-//     background-size: 768px auto;
-//   }
-// }
-
-// @media screen and (min-width: $desktop-width) {
-//   .inner-page {
-//     opacity: 0.8;
-//     background: #ffffff url("../bg/index-desktop.jpg") no-repeat 50% 0;
-//     background: #ffffff url("../bg/catalog-desktop.jpg") no-repeat 50% 0;
-//     background: #ffffff url("../bg/form-desktop.jpg") no-repeat 50% 0;
-//   }
-// }
 
 .inner-page__wrap {
   @include wrapper;
@@ -81,21 +55,7 @@
 }
 
 .inner-page__title {
-  @include out-indents-reset;
-  @include text-size(27px, 30px);
-  @include text-color;
-  font-weight: 700;
-  text-align: center;
-
-  @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
-    @include text-size(43px, 50px);
-    width: 100%;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    @include text-size(53px, 57px);
-  }
+  @include title-first;
 }
 
 .inner-page__title-second {
