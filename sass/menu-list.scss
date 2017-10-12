@@ -1,4 +1,5 @@
 .menu-list {
+
   @media screen and (min-width: $tablet-width) {
     order: 1;
     width: 320px;
@@ -11,6 +12,9 @@
 
 .menu-list__item {
   @include text-decoration;
+  @include mobile-menu-item;
+  padding-top: 25px;
+  padding-left: 76px;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(15px, 24px);

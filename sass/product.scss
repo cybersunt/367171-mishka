@@ -26,11 +26,11 @@
 }
 
 .product__title {
-  @include wrapper;
   @include container;
   @include text-size (25px, 30px);
   @include text-color (#000000);
-  margin-bottom: 18px;
+  margin-bottom: 47px;
+  position: relative;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
@@ -53,6 +53,7 @@
   @include text-color (#63d1bb);
   font-weight: 700;
   text-transform: uppercase;
+  position: absolute;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(17px, 17px);

@@ -13,7 +13,7 @@
 @mixin reset-padding {
   padding: 0;
 }
-p
+
 @mixin vert-padding ($padding-top, $padding-bottom) {
   padding-top: $padding-top;
   padding-bottom: $padding-bottom;
@@ -21,6 +21,25 @@ p
 
 @mixin link-reset {
   text-decoration: none;
+}
+
+@mixin mobile-menu-item {
+  box-sizing: $box-sizing;
+  border-top: $border;
+  height: 80px;
+  padding-bottom: 25px;
+  padding-right: 30px;
+}
+
+@mixin main-nav-toggle {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 // Миксины с заданными значениями

@@ -1,4 +1,5 @@
 .user-list {
+
   @media screen and (min-width: $tablet-width) {
     order: 0;
     display: flex;
@@ -12,6 +13,11 @@
 }
 
 .user-list__item {
+  @include text-decoration;
+  @include mobile-menu-item;
+  padding-top: 24px;
+  padding-left: 30px;
+
   @media screen and (min-width: $tablet-width) {
     height: 90px;
   }
@@ -36,6 +42,13 @@
   }
 }
 
+.user-list__item--cart {
+  padding-top: 22px;
+  @media screen and (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+
 .user-list__link {
   @include link-reset;
   @include text-decoration;
@@ -46,6 +59,10 @@
 
   &:hover {
     @include link-hover;
+
+    .user-list__path {
+      fill: #63d1bb;
+    }
   }
 
   &:focus {
@@ -54,6 +71,10 @@
 
   &:active {
     @include link-active;
+
+    .user-list__path {
+      fill: #d0f1ea;
+    }
   }
 }
 
@@ -63,8 +84,13 @@
   }
 }
 
-.user-list__item--cart {
-  @media screen and (min-width: $tablet-width) {
-    margin-left: auto;
+.user-list__icon {
+  display: inline-block;
+  vertical-align: sub;
+  margin-right: 24px;
+
+  &--cart {
+    margin-right: 21px;
   }
 }
+
