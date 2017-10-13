@@ -3,7 +3,6 @@
 
   @media screen and (min-width: $tablet-width) {
     order: 0;
-    display: flex;
     width: 348px;
     height: 90px;
   }
@@ -21,6 +20,10 @@
 
   @media screen and (min-width: $tablet-width) {
     height: 90px;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -32,9 +35,10 @@
 
 .user-list__item--search {
   @media screen and (min-width: $tablet-width) {
-    width: 82px;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
+    width: 84px;
+    border-left: $border;
+    border-right: $border;
+    justify-content: center;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -47,12 +51,15 @@
   padding-top: 22px;
   @media screen and (min-width: $tablet-width) {
     margin-left: auto;
+    padding: 0;
   }
 }
 
 .user-list__link {
   @include link-reset;
   @include text-decoration;
+  display: flex;
+  align-items: center;
 
   &:visited {
     @include link-visited;
@@ -88,10 +95,20 @@
 .user-list__icon {
   display: inline-block;
   vertical-align: sub;
-  margin-right: 24px;
+  margin-right: 21px;
+
+  &--search {
+    margin-right: 24px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0;
+    display: block;
+  }
 
   &--cart {
-    margin-right: 21px;
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 31px;
+    }
   }
 }
-

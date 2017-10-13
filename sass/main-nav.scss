@@ -41,8 +41,6 @@
   display: block;
 }
 
-main-nav__wrap
-
 .main-nav__toggle {
   @media screen and (min-width: $tablet-width) {
     display: none;
@@ -54,7 +52,7 @@ main-nav__wrap
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -70,7 +68,7 @@ main-nav__wrap
     @include text-size(15px, 24px);
     display: block;
     position: absolute;
-    bottom: 16px;
+    bottom: 20px;
     right: 0;
   }
 
@@ -104,7 +102,7 @@ main-nav__wrap
     margin-right: -30px;
     margin-left: -30px;
     width: 320px;
-    top: 200px;
+    top: 240px;
     right: 0;
     background-color: #ffffff;
   }
@@ -144,4 +142,3 @@ main-nav__wrap
     display: block;
   }
 }
-
