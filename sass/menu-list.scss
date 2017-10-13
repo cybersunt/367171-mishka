@@ -7,7 +7,9 @@
   }
 
   @media screen and (min-width: $desktop-width) {
+    width: 445px;
     order: 0;
+    flex-wrap: wrap;
   }
 }
 
@@ -26,12 +28,30 @@
 
   @media screen and (min-width: $desktop-width) {
     font-size: 17px;
-    width: 185px;
+    width: calc(445px - 185px);
     height: 90px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  &:nth-child(2n-1) {
+    @media screen and (min-width: $desktop-width) {
+      width: 185px;
+    }
+  }
+
+  &:nth-child(2n) {
+    @media screen and (min-width: $desktop-width) {
+      padding-left: 35px;
+    }
+  }
+
+  &:first-child {
+    @media screen and (min-width: $desktop-width) {
+      border-right: $border;
+    }
   }
 
   &--hidden {
@@ -39,11 +59,8 @@
 
     @media screen and (min-width: $desktop-width) {
       font-size: 15px;
-      height: 60px;
+      height: 55px;
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
     }
   }
 }

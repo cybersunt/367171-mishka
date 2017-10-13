@@ -9,6 +9,8 @@
 
   @media screen and (min-width: $desktop-width) {
     order: 2;
+    width: auto;
+    box-shadow: 0 0 5px #000080;
   }
 }
 
