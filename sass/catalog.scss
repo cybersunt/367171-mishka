@@ -25,3 +25,19 @@
     flex-wrap: wrap;
   }
 }
+
+.catalog__item {
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
+  }
+}

@@ -56,14 +56,18 @@
 }
 
 .goods__info {
-  border: $border;
+  // border: $border;
   box-sizing: $box-sizing;
-  padding: 26px 27px 0;
+  padding: 27px 27px 0;
   min-height: 180px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: $tablet-width) {
     width: 334px;
     height: 334px;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -77,23 +81,82 @@
   display: block;
 }
 
+// .goods__desc {
+//   @media screen and (min-width: $tablet-width) {
+
+//   }
+
+// //   @media screen and (min-width: $desktop-width) {
+// //     padding-right: 30px;
+// //   }
+// // }
+
 .goods__title {
   @include reset-margin;
   display: inline-flex;
   vertical-align: top;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-right: 38px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-right: 30px;
+  }
 }
 
 .goods__data {
   font-size: 13px;
+  margin-bottom: 20px;
+  display: block;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 15px;
+    flex-grow: 1;
   }
 }
 
 .goods__buy {
-  margin-bottom: 31px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #000;
+  padding-top: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 27px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.goods__add-to-cart {
+  svg {
+    display: block;
+  }
+
+  &:hover .goods__icon{
+    fill: #63d1bb;
+  }
+
+  &:focus .goods__icon{
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #d0f1ea;
+  }
 }
 
 .goods__price {
