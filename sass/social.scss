@@ -28,11 +28,12 @@
 }
 
 .social__link {
-  @include svg-hover;
 
   &:visited .footer__hover {
     fill: #231F20;
   }
+
+  @include svg-hover;
 }
 
 .social__icon {
