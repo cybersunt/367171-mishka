@@ -85,7 +85,7 @@
     display: none;
   }
 
-  .main-nav--opened  .menu-list {
+  .menu-list {
     position: absolute;
     margin-right: -30px;
     margin-left: -30px;
@@ -95,7 +95,7 @@
     background-color: #ffffff;
   }
 
-.main-nav--opened  .user-list {
+  .user-list {
     position: absolute;
     margin-right: -30px;
     margin-left: -30px;
@@ -123,17 +123,17 @@
     display: none;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav .main-nav--nojs  {
+  .main-nav__list .main-nav--nojs  {
     position: static;
     min-height: 0;
   }
 
   .main-nav--nojs .menu-list__item {
     display: block;
+
+    &--hidden {
+      display: none;
+    }
   }
 
   .main-nav--nojs .user-list__item {
