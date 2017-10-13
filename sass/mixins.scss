@@ -146,6 +146,20 @@
   }
 }
 
+@mixin svg-hover {
+  &:hover .footer__hover {
+    fill: #46c1ae;
+  }
+
+  &:focus .footer__hover {
+    fill: #46c1ae;
+  }
+
+  &:active .footer__hover {
+    fill: #bde3dd;
+  }
+}
+
 // Миксины с переменными
 @mixin text-color ($color: #000000) {
   color: $color;

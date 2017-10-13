@@ -10,4 +10,13 @@
   @include text-size (19px, 18px);
   @include text-color;
   font-weight: 700;
+  margin-right: 24px;
+}
+
+.copyright__link {
+  @include svg-hover;
+}
+
+.copyright__img {
+  display: block;
 }
