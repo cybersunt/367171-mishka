@@ -32,6 +32,9 @@
 
   @media screen and (min-width: $tablet-width) {
     display: block;
+    min-width: 102px;
+    max-width: 185px;
+    margin-right: 83px;
   }
 }
 

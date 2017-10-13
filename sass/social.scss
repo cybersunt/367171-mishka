@@ -3,11 +3,11 @@
   width: auto;
   box-sizing: $box-sizing;
   border-bottom: $border;
-  border-bottom: 1px solid #000;
   flex-wrap: wrap;
 
   @media screen and (min-width: $tablet-width) {
     height: 143px;
+    border: 0;
   }
 }
 
