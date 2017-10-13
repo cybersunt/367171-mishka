@@ -1,5 +1,19 @@
 .copyright {
+  @include link-reset;
+  @include svg-hover;
+  @include text-size (19px, 18px);
+  @include text-color;
+  font-weight: 700;
   height: 80px;
+
+  &:visited .copyright__text {
+    @include link-reset;
+    color: #000000;
+  }
+
+  &:active .copyright__text {
+    color: #f1f1f1;
+  }
 
   @media screen and (min-width: $tablet-width) {
     height: 143px;
@@ -7,15 +21,9 @@
 }
 
 .copyright__text {
-  @include text-size (19px, 18px);
-  @include text-color;
-  font-weight: 700;
   margin-right: 24px;
 }
 
-.copyright__link {
-  @include svg-hover;
-}
 
 .copyright__img {
   display: block;
