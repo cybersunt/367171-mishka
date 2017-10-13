@@ -9,8 +9,6 @@
 
   @media screen and (min-width: $desktop-width) {
     order: 2;
-    width: auto;
-    box-shadow: 0 0 5px #000080;
   }
 }
 
@@ -44,7 +42,6 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: 175px;
     border-left: none;
   }
 }

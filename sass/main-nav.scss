@@ -31,10 +31,11 @@
   @media screen and (min-width: $desktop-width) {
     order: 1;
     width: 160px;
+    margin-right: 95px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 5px #008000;
+
   }
 }
 
