@@ -101,20 +101,19 @@
 
   @media screen and (min-width: $tablet-width) {
     position: absolute;
-    bottom: 5px;
-    right: 55px;
+    bottom: 17px;
+    right: 75px;
+    width: 137px;
+    display: flex;
+    justify-content: space-between;
   }
-
-  // @media screen and (min-width: $desktop-width) {
-  //   bottom: 162px;
-  // }
 }
 
 .reviews__prev {
   @include arrows;
 
   @media screen and (min-width: $tablet-width) {
-    @include arrows (80px, 48px);
+    @include arrows (50px, 26px);
   }
 }
 
@@ -122,7 +121,23 @@
   @include arrows;
 
   @media screen and (min-width: $tablet-width) {
-    @include arrows (80px, 48px);
+    @include arrows (50px, 26px);
+  }
+}
+
+.reviews__svg {
+  cursor: pointer;
+
+  &:hover polygon {
+      fill: #666666;
+  }
+
+  &:focus polygon {
+      fill: #666666;
+  }
+
+  &:active polygon {
+    fill: #b2b2b2;
   }
 }
 
