@@ -95,12 +95,15 @@
 
 .promo__item {
   @include link-reset;
+  @include text-size (19px, 24px);
+  @include text-color (#ffffff);
+  font-weight: 700;
   box-sizing: $box-sizing;
   min-height: 103px;
   padding-top: 25px;
   padding-bottom: 30px;
   padding-left: 30px;
-  padding-right: 115px;
+  padding-right: 125px;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size (20px, 30px);
@@ -149,7 +152,7 @@
     opacity: 0.7;
   }
 
-  &:active .promo__text{
+  &:active .promo__text {
     @include link-active (#97e2d2);
   }
 
@@ -204,8 +207,5 @@
 }
 
 .promo__text {
-  @include text-size (19px, 24px);
-  @include text-color (#ffffff);
-  font-weight: 700;
   display: block;
 }

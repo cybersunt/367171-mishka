@@ -27,24 +27,39 @@
 
 .product__title {
   @include container;
+  width: 260px;
   @include text-size (25px, 30px);
   @include text-color (#000000);
-  margin-bottom: 47px;
-  position: relative;
+  margin-bottom: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
     @include reset-padding;
+    flex-direction: row;
+    align-items: center;
     position: absolute;
     margin-bottom: 0;
     top: -98px;
+    width: 668px;
   }
 
   @media screen and (min-width: $desktop-width) {
     @include text-size (53px, 57px);
     top: 52px;
-    left: 220px;
+    left: 76px;
     z-index: 1;
+    flex-direction: row-reverse;
+  }
+
+  span {
+    margin-bottom: 5px;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -53,11 +68,17 @@
   @include text-color (#63d1bb);
   font-weight: 700;
   text-transform: uppercase;
-  position: absolute;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(17px, 17px);
-    position: absolute;
+    text-align: center;
+    width: 127px;
+    padding-top: 5px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 115px;
+    padding-top: 8px;
   }
 }
 
@@ -82,15 +103,15 @@
 .product__text {
   @include reset-margin;
   line-height: 24px;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 
   @media screen and (min-width: $tablet-width) {
     line-height: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-bottom: 46px;
+    margin-bottom: 50px;
   }
 }
 
@@ -100,18 +121,24 @@
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(15px, 20px);
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-bottom: 112px;
+    margin-bottom: 108px;
   }
 }
 
 .product__info-item {
   border-bottom: $border;
   line-height: 20px;
-  padding: 10px 0 9px;
+  padding: 7px 0 12px;
+}
+
+.product__info-name {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 94px;
 }
 
 .product__img-link {
