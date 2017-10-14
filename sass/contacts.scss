@@ -53,13 +53,33 @@
   @media screen and (min-width: $tablet-width) {
     @include reset-padding;
     @include text-size(43px, 50px);
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   @media screen and (min-width: $desktop-width) {
     @include text-size(53px, 57px);
     padding-top: 71px;
+    margin-bottom: 48px;
     width: 354px;
+  }
+
+  &::before {
+    @media screen and (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 82px;
+      background-image: url("../img/flag.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      top: -18px;
+      right: 53px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      left: 113px;
+      top: 64px;
+    }
   }
 }
 
@@ -76,7 +96,7 @@
   @media screen and (min-width: $desktop-width) {
     width: 350px;
     margin-left: 5px;
-    margin-bottom: 78px;
+    margin-bottom: 79px;
   }
 
   tbody {
@@ -158,6 +178,35 @@
     right: 56px;
     width: 521px;
     height: 460px;
+  }
+}
+
+.contacts__map--img {
+  position: relative;
+  height: 457px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 101px;
+    background-image: url("../img/map-pin.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-left: -33px;
+    margin-top: -101px;
+    top: 245px;
+    right: 115px;
+
+    @media screen and (min-width: $tablet-width) {
+      top: 240px;
+      right: 339px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      top: 248px;
+      right: 215px;
+    }
   }
 }
 

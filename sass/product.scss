@@ -5,7 +5,7 @@
   @media screen and (min-width: $tablet-width) {
     @include reset-padding;
     @include vert-padding (112px, 0);
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -107,7 +107,7 @@
 
   @media screen and (min-width: $tablet-width) {
     line-height: 30px;
-    margin-bottom: 38px;
+    margin-bottom: 36px;
   }
 
   @media screen and (min-width: $desktop-width) {
