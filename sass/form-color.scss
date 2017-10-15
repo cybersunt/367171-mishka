@@ -10,6 +10,7 @@
 .form-color__label {
   @include vert-padding (11px, 11px);
   box-sizing: $box-sizing;
+  position: relative;
   margin-bottom: 21px;
 
   @media screen and (min-width: $tablet-width) {
@@ -21,5 +22,9 @@
 
   @media screen and (min-width: $desktop-width) {
     margin-right: 14px;
+  }
+
+  &::before {
+    @include radio-checkbox;
   }
 }
