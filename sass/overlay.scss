@@ -9,5 +9,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: flex;
+  }
 }

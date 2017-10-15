@@ -175,14 +175,14 @@
 }
 
 .form-contacts__input--surname {
-    @media screen and (min-width: $tablet-width) {
-      width: 400px;
-    }
-
-    @media screen and (min-width: $desktop-width) {
-      width: 600px;
-    }
+  @media screen and (min-width: $tablet-width) {
+    width: 400px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 600px;
+  }
+}
 
 .form-contacts__icon {
   position: absolute;
