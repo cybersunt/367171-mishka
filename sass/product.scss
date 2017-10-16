@@ -96,7 +96,7 @@
   @media screen and (min-width: $desktop-width) {
     box-sizing: $box-sizing;
     min-height: 637px;
-    padding-top: 153px;
+    padding-top: 158px;
     margin-right: 55px;
   }
 }
@@ -153,6 +153,22 @@
 
   @media screen and (min-width: $desktop-width) {
     top: 0;
+  }
+}
+
+.product__img {
+  display: block;
+  width: 260px;
+  height: 315px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 334px;
+    height: 405px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 528px;
+    height: 637px;
   }
 }
 
