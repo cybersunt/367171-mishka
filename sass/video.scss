@@ -123,6 +123,16 @@
 
 .video__img {
   display: block;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 682px;
+    height: 455px;
+  }
 }
 
 .video__start-btn {

@@ -44,6 +44,7 @@
     margin-bottom: 0;
     top: -98px;
     width: 668px;
+    left: 46px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -72,7 +73,7 @@
   @media screen and (min-width: $tablet-width) {
     @include text-size(17px, 17px);
     text-align: center;
-    width: 127px;
+    width: 117px;
     padding-top: 5px;
   }
 

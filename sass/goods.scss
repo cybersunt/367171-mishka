@@ -78,6 +78,16 @@
 
 .goods__img {
   display: block;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 315px;
+    height: 462px;
+  }
 }
 
 .goods__title {
