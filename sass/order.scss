@@ -1,13 +1,22 @@
 .order__fieldset {
   @include reset-padding;
   @include reset-margin;
-  @include grid-col-row;
   box-sizing: $box-sizing;
   border: 0;
   margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 0;
+    flex-direction: row;
+
+    &--contacts {
+      @media screen and (min-width: $tablet-width) {
+        flex-direction: column;
+      }
+    }
   }
 }
 
@@ -26,7 +35,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-left: 114px;
+    padding-left: 112px;
 
     &--col {
       padding-right: 224px;
@@ -69,7 +78,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: 91px;
+    width: 92px;
   }
 }
 
@@ -140,7 +149,7 @@
 
 .order__textarea {
   border: 2px solid #444444;
-  padding: 10px 15px;
+  padding: 12px 15px;
 
   &::placeholder {
     @include text-size(17px, 18px);
@@ -207,10 +216,10 @@
     z-index: 1;
 
     @media screen and (min-width: $tablet-width) {
-      width: 20px;
-      height: 20px;
-      top: 15px;
-      left: 35px;
+      width: 21px;
+      height: 21px;
+      top: 16px;
+      left: 36px;
     }
   }
 }
@@ -257,7 +266,7 @@
 
   @media screen and (min-width: $tablet-width) {
     width: 231px;
-    padding: 14px 25px;
+    padding: 14px 24px;
     order: -1;
     margin-right: auto;
   }

@@ -27,7 +27,7 @@
   @include text-size (25px, 30px);
   @include text-color;
   @include reset-margin;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);

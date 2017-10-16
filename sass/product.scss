@@ -85,6 +85,7 @@
 
 .product__description {
   position: relative;
+  width: 260px;
   height: 678px;
 
   @media screen and (min-width: $tablet-width) {
@@ -145,6 +146,8 @@
 .product__img-link {
   position: absolute;
   bottom: 115px;
+  left: 30px;
+  right: 30px;
 
   @media screen and (min-width: $tablet-width) {
     position: relative;

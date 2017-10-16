@@ -36,6 +36,7 @@
 
   @media screen and (min-width: $desktop-width) {
     width: 720px;
+    padding-left: 24px;
   }
 }
 
@@ -44,6 +45,10 @@
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 23px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 24px;
   }
 }
 
@@ -150,15 +155,19 @@
   }
 }
 
-.form-contacts__input--phone {
+.form-contacts__layout:first-child {
   margin-bottom: 33px;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 25px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
-.form-contacts__input--email {
+.form-contacts__layout:last-child  {
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 25px;
   }
