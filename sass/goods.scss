@@ -70,7 +70,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 23px 27px 0;
+    padding: 25px 27px 0;
     width: inherit;
     height: 195px;
   }
@@ -79,7 +79,7 @@
 .goods__img {
   display: block;
   width: 265px;
-  height: 160px;
+  height: 195px;
 
   @media screen and (min-width: $tablet-width) {
     width: 334px;
