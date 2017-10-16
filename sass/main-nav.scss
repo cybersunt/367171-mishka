@@ -40,8 +40,13 @@
 
 .main-nav__logo-image {
   display: block;
-  width: 113px;
-  height: 46px;
+  width: 86px;
+  height: 35px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
 
   @media screen and (min-width: $desktop-width) {
     width: 149px;

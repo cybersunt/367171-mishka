@@ -12,7 +12,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-top: 60px;
+    padding-top: 72px;
   }
 }
 
@@ -57,7 +57,7 @@
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -145,10 +145,10 @@
   @media screen and (min-width: $tablet-width) {
     position: absolute;
     top: 2px;
-    right: 50px;
+    right: 49px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    top: 10px;
+    top: 8px;
   }
 }
