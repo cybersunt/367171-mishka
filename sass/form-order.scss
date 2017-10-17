@@ -1,9 +1,9 @@
 .form-order {
-  margin-bottom: 55px;
+  margin-bottom: 51px;
 }
 
 .form-order__text {
-  @include out-indents-reset;
+  @include reset-margin;
   @include text-size (13px, 24px);
   margin-bottom: 25px;
 

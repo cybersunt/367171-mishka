@@ -1,25 +1,22 @@
 .order__fieldset {
-  @include int-indents-reset;
-  @include out-indents-reset;
-  @include grid-col-row;
+  @include reset-padding;
+  @include reset-margin;
   box-sizing: $box-sizing;
   border: 0;
   margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 0;
-    // Временно для сетки
-    // &:nth-child(1) {
-    //   height: 211px;
-    // }
+    flex-direction: row;
 
-    // &:nth-child(2) {
-    //   height: 385px;
-    // }
-
-    // &:nth-child(3) {
-    //   height: 725px;
-    // }
+    &--contacts {
+      @media screen and (min-width: $tablet-width) {
+        flex-direction: column;
+      }
+    }
   }
 }
 
@@ -30,12 +27,19 @@
   @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     flex-wrap: wrap;
+
+    &--col {
+      flex-direction: column;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-left: 114px;
+    padding-left: 112px;
+
+    &--col {
+      padding-right: 224px;
+    }
   }
 
   &--check {
@@ -74,7 +78,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: 91px;
+    width: 92px;
   }
 }
 
@@ -96,20 +100,42 @@
 }
 
 .order__input {
+  box-sizing: $box-sizing;
   border: none;
   border-bottom: 2px solid #000000;
+  background-color: transparent;
+  padding-top: 3px;
 
-  &::placeholder {
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &:placeholder {
     @include text-size(17px, 18px);
     font-family: "Open Sans", "Arial", sans-serif;
     color: rgba(68, 68, 68, 0.3);
   }
 
+  @media screen and (min-width: $tablet-width) {
+    @include text-size(19px, 18px);
+  }
+
+  &:hover {
+    outline: 0;
+    border-color: $green;
+
+    &:placeholder {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
   &:focus {
     outline: 0;
-    border-color: #62d1ba;
+    border-color: $green;
 
-    &::placeholder {
+    &:placeholder {
       color: rgba(68, 68, 68, 0.3);
     }
   }
@@ -117,22 +143,27 @@
   &:active {
     color: #444444;
     outline: 0;
-    border-color: #62d1ba;
+    border-color: $green;
   }
 }
 
 .order__textarea {
   border: 2px solid #444444;
+  padding: 12px 15px;
 
   &::placeholder {
     @include text-size(17px, 18px);
     font-family: "Open Sans", "Arial", sans-serif;
     color: rgba(68, 68, 68, 0.3);
+
+    @media screen and (min-width: $tablet-width) {
+      @include text-size(19px, 18px);
+    }
   }
 
   &:focus {
     outline: 0;
-    border-color: #62d1ba;
+    border-color: $green;
 
     &::placeholder {
       color: rgba(68, 68, 68, 0.3);
@@ -142,12 +173,12 @@
   &:active {
     color: #444444;
     outline: 0;
-    border-color: #62d1ba;
+    border-color: $green;
   }
 }
 
 .order__comment {
-  @include out-indents-reset;
+  @include reset-margin;
   @include text-size(14px, 16px);
   margin-bottom: 31px;
 
@@ -159,11 +190,75 @@
 }
 
 .order__radio {
-  @include radio-checkbox;
+  display: none;
+
+  &:hover + .order__subtitle::before {
+    border-color: $green;
+  }
+
+  &:focus + .order__subtitle::before {
+    border-color: $green;
+  }
+
+  &:active + .order__subtitle::before {
+    border-color: #c7c7c7;
+  }
+
+  &:checked + .order__subtitle::after {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $green;
+    z-index: 1;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 21px;
+      height: 21px;
+      top: 16px;
+      left: 36px;
+    }
+  }
 }
 
 .order__checkbox {
-  @include radio-checkbox;
+  display: none;
+
+  &:hover + .order__subtitle::before {
+    border-color: $green;
+  }
+
+  &:focus + .order__subtitle::before {
+    border-color: $green;
+  }
+
+  &:active + .order__subtitle::before {
+    border-color: #c7c7c7;
+  }
+
+  &:checked + .order__subtitle::after {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    content: "";
+    width: 23px;
+    height: 16px;
+    background-image: url("../img/tick-mobile.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 33px;
+      height: 23px;
+      top: 15px;
+      left: 30px;
+      background-image: url("../img/tick.svg");
+    }
+  }
 }
 
 .order__btn {
@@ -171,7 +266,7 @@
 
   @media screen and (min-width: $tablet-width) {
     width: 231px;
-    padding: 14px 25px;
+    padding: 14px 24px;
     order: -1;
     margin-right: auto;
   }
