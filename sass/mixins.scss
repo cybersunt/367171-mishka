@@ -6,11 +6,11 @@
   padding: 0;
 }
 
-@mixin out-indents-reset {
+@mixin reset-margin {
   margin: 0;
 }
 
-@mixin int-indents-reset {
+@mixin reset-padding {
   padding: 0;
 }
 
@@ -23,12 +23,52 @@
   text-decoration: none;
 }
 
+@mixin mobile-menu-item {
+  box-sizing: $box-sizing;
+  border-top: $border;
+  height: 80px;
+  padding-bottom: 25px;
+  padding-right: 30px;
+}
+
+@mixin main-nav-toggle {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 // Миксины с заданными значениями
 @mixin text-decoration {
   color: #000000;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+}
+
+@mixin title-first {
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 43px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 @mixin link-hover {
@@ -94,15 +134,33 @@
 }
 
 @mixin radio-checkbox {
-  width: 40px;
-  height: 40px;
-  display: none;
   position: absolute;
   content: "";
+  width: 35px;
+  height: 35px;
+  border: 2px solid #444444;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
   @media screen and (min-width: $tablet-width) {
-    width: 53px;
-    height: 53px;
+    width: 48px;
+    height: 48px;
+    left: 20px;
+  }
+}
+
+@mixin svg-hover {
+  &:hover .footer__hover {
+    fill: #46c1ae;
+  }
+
+  &:focus .footer__hover {
+    fill: #46c1ae;
+  }
+
+  &:active .footer__hover {
+    fill: #bde3dd;
   }
 }
 
@@ -127,5 +185,10 @@
 @mixin arrows ($width: 130px, $height: 52px) {
   width: $width;
   height: $height;
-  border: 0;
+  border: $border;
+  background: none;
+
+  @media screen and (min-width: $tablet-width) {
+    border: none;
+  }
 }

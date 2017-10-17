@@ -11,7 +11,8 @@
 
   @media screen and (min-width: $desktop-width) {
     min-height: 600px;
-    padding-top: 93px;
+    padding-top: 95px;
+    margin-bottom: 58px;
   }
 }
 
@@ -25,7 +26,7 @@
   }
 
   &--maps {
-    @include int-indents-reset;
+    @include reset-padding;
   }
 }
 
@@ -39,8 +40,8 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    @include int-indents-reset;
-    @include out-indents-reset;
+    @include reset-padding;
+    @include reset-margin;
   }
 }
 
@@ -51,15 +52,35 @@
   margin-bottom: 26px;
 
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include reset-padding;
     @include text-size(43px, 50px);
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   @media screen and (min-width: $desktop-width) {
     @include text-size(53px, 57px);
     padding-top: 71px;
+    margin-bottom: 48px;
     width: 354px;
+  }
+
+  &::before {
+    @media screen and (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 82px;
+      background-image: url("../img/flag.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      top: -18px;
+      right: 53px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      left: 113px;
+      top: 64px;
+    }
   }
 }
 
@@ -69,14 +90,14 @@
   width: auto;
 
   @media screen and (min-width: $tablet-width) {
-    @include out-indents-reset;
+    @include reset-margin;
     margin-bottom: 55px;
   }
 
   @media screen and (min-width: $desktop-width) {
     width: 350px;
     margin-left: 5px;
-    margin-bottom: 78px;
+    margin-bottom: 79px;
   }
 
   tbody {
@@ -125,7 +146,7 @@
   @include link-reset;
   color: #444444;
   padding-bottom: 4px;
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid $green;
 
   &:visited {
     color: #444444;
@@ -161,13 +182,53 @@
   }
 }
 
+.contacts__map--img {
+  position: relative;
+  height: 457px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 101px;
+    background-image: url("../img/map-pin.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-left: -33px;
+    margin-top: -101px;
+    top: 245px;
+    right: 115px;
+
+    @media screen and (min-width: $tablet-width) {
+      top: 240px;
+      right: 339px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      top: 248px;
+      right: 215px;
+    }
+  }
+}
+
 .contacts__img {
   display: block;
+  width: 322px;
+  height: 457px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 768px;
+    height: 460px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 528px;
+  }
 }
 
 .contacts__btn {
   @media screen and (min-width: $tablet-width) {
-    @include int-indents-reset;
+    @include reset-padding;
     width: 231px;
     margin: 0 auto;
   }

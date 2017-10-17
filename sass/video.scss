@@ -30,7 +30,7 @@
   @media screen and (min-width: $desktop-width) {
     padding-left: 78px;
     padding-right: 58px;
-    padding-top: 95px;
+    padding-top: 40px;
   }
 }
 
@@ -41,21 +41,43 @@
   padding-bottom: 23px;
   padding-right: 30px;
   margin-bottom: 178px;
+  position: relative;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(20px, 24px);
-    @include int-indents-reset;
+    @include reset-padding;
     padding-left: 65px;
     margin-bottom: 33px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    @include int-indents-reset;
+    @include reset-padding;
+    padding-top: 55px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 29px;
+    left: 0;
+
+    @media screen and (min-width: $tablet-width) {
+      top: -5px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      top: 0;
+    }
   }
 }
 
 .video__text {
-  @include out-indents-reset;
+  @include reset-margin;
   @include text-size (13px, 24px);
   margin-bottom: 25px;
 
@@ -101,10 +123,48 @@
 
 .video__img {
   display: block;
+  width: 265px;
+  height: 150px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 682px;
+    height: 455px;
+  }
 }
 
 .video__start-btn {
   position: absolute;
-  top: 42px;
-  left: 86px;
+  margin-left: -50px;
+  margin-top: -40px;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background: none;
+  display: block;
+
+  &:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transition: 0.7s;
+    transform: scale(0.8);
+
+    .video__start-btn-fill {
+      fill: #d0f1ea;
+    }
+  }
 }

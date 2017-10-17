@@ -36,52 +36,65 @@
 
   @media screen and (min-width: $desktop-width) {
     width: 720px;
+    padding-left: 24px;
+  }
+}
+
+.form-contacts__label--fullname {
+  margin-bottom: 22px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 23px;
   }
 
-  &--fullname {
-    margin-bottom: 22px;
-
-    @media screen and (min-width: $tablet-width) {
-      margin-bottom: 23px;
-    }
-  }
-
-  &--title {
-    @media screen and (min-width: $tablet-width) {
-      width: 168px;
-      padding-left: 0;
-      padding-top: 19px;
-    }
-
-    @media screen and (min-width: $desktop-width) {
-      width: 111px;
-    }
-  }
-
-  &--title-message {
+  @media screen and (min-width: $desktop-width) {
     margin-bottom: 24px;
+  }
+}
 
-    @media screen and (min-width: $tablet-width) {
-      width: 168px;
-      padding-left: 0;
-      padding-top: 18px;
-    }
+.form-contacts__label--title {
+  @media screen and (min-width: $tablet-width) {
+    width: 166px;
+    padding-left: 0;
+    padding-top: 19px;
+  }
 
-    @media screen and (min-width: $desktop-width) {
-      width: 111px;
-    }
+  @media screen and (min-width: $desktop-width) {
+    width: 111px;
+  }
+}
+
+.form-contacts__label--title-message {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 166px;
+    padding-left: 0;
+    padding-top: 18px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 111px;
   }
 }
 
 .form-contacts__field-name {
   @media screen and (min-width: $tablet-width) {
     display: block;
-    width: 100px;
+    width: 111px;
     margin-right: 25px;
     padding-top: 15px;
 
     &--name {
-      width: 47px;
+      width: 50px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 104px;
+
+      &--name {
+        width: 45px;
+      }
     }
   }
 
@@ -92,17 +105,28 @@
 
 .form-contacts__connections {
   margin-bottom: 34px;
+  position: relative;
 
   @media screen and (min-width: $tablet-width) {
-    @include form-decor ($form-bg);
+    @include form-decor ($bg-color);
     margin-bottom: 0;
+  }
+}
+
+.form-contacts__layout {
+  position: relative;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .form-contacts__message {
   @media screen and (min-width: $tablet-width) {
     @include form-decor;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 }
 
@@ -110,6 +134,7 @@
   width: 260px;
   height: 52px;
   box-sizing: $box-sizing;
+  position: relative;
 
   @media screen and (min-width: $tablet-width) {
     width: 500px;
@@ -117,41 +142,72 @@
 
   @media screen and (min-width: $desktop-width) {
     width: 700px;
-    margin-right: 100px;
   }
 
-  &--phone {
-    margin-bottom: 33px;
-
-    @media screen and (min-width: $tablet-width) {
-      margin-bottom: 25px;
-    }
+  &:hover ~ .form-contacts__icon {
+    opacity: 1;
+    fill: $green;
   }
 
-  &--email {
-    @media screen and (min-width: $tablet-width) {
-      margin-bottom: 25px;
-    }
+  &:focus ~ .form-contacts__icon {
+    opacity: 1;
+    fill: $green;
+  }
+}
+
+.form-contacts__layout:first-child {
+  margin-bottom: 33px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 25px;
   }
 
-  &--name {
-    @media screen and (min-width: $tablet-width) {
-      width: 428px;
-    }
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
+}
 
-    @media screen and (min-width: $desktop-width) {
-      width: 628px;
-    }
+.form-contacts__layout:last-child {
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.form-contacts__input--name {
+  @media screen and (min-width: $tablet-width) {
+    width: 428px;
   }
 
-  &--surname {
-    @media screen and (min-width: $tablet-width) {
-      width: 400px;
-    }
+  @media screen and (min-width: $desktop-width) {
+    width: 628px;
+  }
+}
 
-    @media screen and (min-width: $desktop-width) {
-      width: 600px;
-    }
+.form-contacts__input--surname {
+  @media screen and (min-width: $tablet-width) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 600px;
+  }
+}
+
+.form-contacts__icon {
+  position: absolute;
+  fill: #000000;
+  opacity: 0.2;
+  top: 33px;
+  right: 6px;
+
+  @media screen and (min-width: $tablet-width) {
+    top: 11px;
+    right: 24px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    top: 11px;
+    right: 6px;
   }
 }
 

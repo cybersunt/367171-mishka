@@ -1,13 +1,36 @@
 .social {
   height: 80px;
+  width: auto;
+  box-sizing: $box-sizing;
+  border-bottom: $border;
   flex-wrap: wrap;
 
   @media screen and (min-width: $tablet-width) {
     height: 143px;
+    border: 0;
   }
 }
 
 .social__list {
   @include list-reset;
+  min-width: 145px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.social__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  @include svg-hover;
+}
+
+.social__icon {
+  display: block;
 }
