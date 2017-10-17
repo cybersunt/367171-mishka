@@ -103,6 +103,7 @@
     top: 80px;
     right: 0;
     background-color: #ffffff;
+    z-index: 1;
   }
 
   .user-list {
@@ -113,6 +114,7 @@
     top: 240px;
     right: 0;
     background-color: #ffffff;
+    z-index: 1;
   }
 
   .main-nav--closed .main-nav__toggle {
