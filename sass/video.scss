@@ -144,7 +144,10 @@
   top: 50%;
   left: 50%;
   cursor: pointer;
-  outline: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  display: block;
 
   &:hover {
     transition: 0.5s;
