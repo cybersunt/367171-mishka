@@ -60,12 +60,11 @@
       content: "";
       width: 100%;
       height: 34px;
-      background: url(../img/bg-zigzag-fill.svg) repeat -13px 0;
+      background: url("../img/bg-zigzag-fill.svg") repeat -13px 0;
       bottom: 0;
       z-index: 1;
     }
   }
-
 }
 
 .inner-page__title {

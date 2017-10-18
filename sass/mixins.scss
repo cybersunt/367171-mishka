@@ -42,13 +42,13 @@
   }
 }
 
-@mixin zigzag ($top-tablet, $top-desktop){
+@mixin zigzag ($top-tablet, $top-desktop) {
   @media screen and (min-width: $tablet-width) {
     position: absolute;
     content: "";
     width: 668px;
     height: 34px;
-    background: url(../img/bg-zigzag-line.svg) repeat -25px 0;
+    background: url("../img/bg-zigzag-line.svg") repeat -25px 0;
     background-repeat-y: no-repeat;
     background-size: auto 50%;
     left: 50px;
