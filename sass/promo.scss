@@ -52,8 +52,8 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-tablet@2x.jpg");
-    background-size: 1150 px;
-
+    background-size: 1150px;
+  }
 
   @media screen and (min-width: $desktop-width) {
     padding-left: 100px;
