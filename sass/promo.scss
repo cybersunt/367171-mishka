@@ -211,12 +211,12 @@
     }
   }
 
-&:focus::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  z-index: 1;
+  &:focus::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    z-index: 1;
 
     @media (max-width: $mobile-width-only) {
       height: 5px;
