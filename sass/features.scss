@@ -17,9 +17,14 @@
 .features__wrap {
   @include wrapper;
   @include container;
+  position: relative;
 
   @media screen and (min-width: $desktop-width) {
     @include left-wrap;
+  }
+
+  &::before {
+    @include zigzag (-65px, -82px);
   }
 }
 
@@ -32,10 +37,12 @@
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
     margin-bottom: 46px;
+    margin-left: -5px;
   }
 
   @media screen and (min-width: $desktop-width) {
     @include text-size(53px, 57px);
+    margin-left: 0;
   }
 }
 

@@ -5,7 +5,7 @@
   @media screen and (min-width: $tablet-width) {
     @include reset-padding;
     @include vert-padding (112px, 0);
-    margin-bottom: 51px;
+    margin-bottom: 53px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -91,14 +91,14 @@
   @media screen and (min-width: $tablet-width) {
     height: inherit;
     width: 290px;
-    margin-right: 44px;
+    margin-right: 14px;
   }
 
   @media screen and (min-width: $desktop-width) {
     box-sizing: $box-sizing;
     min-height: 637px;
     padding-top: 158px;
-    margin-right: 55px;
+    margin-right: 28px;
   }
 }
 
@@ -123,7 +123,7 @@
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(15px, 20px);
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -151,7 +151,7 @@
 
   @media screen and (min-width: $tablet-width) {
     position: relative;
-    top: 10px;
+    top: 5px;
   }
 
   @media screen and (min-width: $desktop-width) {

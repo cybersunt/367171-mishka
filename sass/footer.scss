@@ -29,6 +29,7 @@
 
 .footer__logo {
   display: none;
+  cursor: pointer;
 
   @media screen and (min-width: $tablet-width) {
     display: block;
@@ -36,8 +37,35 @@
     max-width: 185px;
     margin-right: 83px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+.footer__logo--nolink {
+  cursor: default;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
 .footer__social {
   display: flex;
   align-items: center;
