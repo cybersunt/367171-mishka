@@ -6,14 +6,13 @@
 
   &:nth-child(3n) {
     margin-bottom: 0;
-    height: 398px;
-
-    @media screen and (min-width: $tablet-width) {
-      height: 334px;
-    }
 
     @media screen and (min-width: $desktop-width) {
       margin-right: 0;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 30px;
     }
   }
 
@@ -25,6 +24,7 @@
 
   @media screen and (min-width: $desktop-width) {
     width: 315px;
+    justify-content: flex-start;
     margin-right: 52px;
     margin-bottom: 30px;
   }

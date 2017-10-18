@@ -18,6 +18,7 @@
 
 .main-nav__logo {
   margin-right: 68px;
+  cursor: pointer;
 
   @media screen and (min-width: $tablet-width) {
     height: 90px;
@@ -35,6 +36,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+}
+
+.main-nav__logo--nolink {
+  cursor: default;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }
 
