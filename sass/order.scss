@@ -105,6 +105,7 @@
   border-bottom: 2px solid #000000;
   background-color: transparent;
   padding-top: 3px;
+  color: rgba(68, 68, 68, 0.3);
 
   @media screen and (min-width: $tablet-width) {
     padding-top: 0;
@@ -112,21 +113,21 @@
     padding-right: 15px;
   }
 
-  &:placeholder {
+  &::placeholder {
     @include text-size(17px, 18px);
     font-family: "Open Sans", "Arial", sans-serif;
     color: rgba(68, 68, 68, 0.3);
-  }
 
-  @media screen and (min-width: $tablet-width) {
-    @include text-size(19px, 18px);
+    @media screen and (min-width: $tablet-width) {
+      @include text-size(19px, 18px);
+    }
   }
 
   &:hover {
     outline: 0;
     border-color: $green;
 
-    &:placeholder {
+    &::placeholder {
       color: rgba(68, 68, 68, 0.3);
     }
   }
@@ -135,15 +136,9 @@
     outline: 0;
     border-color: $green;
 
-    &:placeholder {
-      color: rgba(68, 68, 68, 0.3);
+    &::placeholder {
+      color: rgba(68, 68, 68, 1);
     }
-  }
-
-  &:active {
-    color: #444444;
-    outline: 0;
-    border-color: $green;
   }
 }
 
@@ -158,10 +153,11 @@
 
     @media screen and (min-width: $tablet-width) {
       @include text-size(19px, 18px);
+      color: rgba(68, 68, 68, 0.3);
     }
   }
 
-  &:focus {
+  &:hover {
     outline: 0;
     border-color: $green;
 
@@ -170,10 +166,13 @@
     }
   }
 
-  &:active {
-    color: #444444;
+  &:focus {
     outline: 0;
     border-color: $green;
+
+    &::placeholder {
+      color: rgba(68, 68, 68, 1);
+    }
   }
 }
 
@@ -191,6 +190,7 @@
 
 .order__radio {
   display: none;
+  cursor: pointer;
 
   &:hover + .order__subtitle::before {
     border-color: $green;
@@ -226,6 +226,7 @@
 
 .order__checkbox {
   display: none;
+  cursor: pointer;
 
   &:hover + .order__subtitle::before {
     border-color: $green;

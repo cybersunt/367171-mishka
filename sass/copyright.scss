@@ -1,18 +1,37 @@
 .copyright {
   @include link-reset;
-  @include svg-hover;
   @include text-size (19px, 18px);
   @include text-color;
   font-weight: 700;
   height: 80px;
 
-  &:visited .copyright__text {
-    @include link-reset;
+  &:visited {
     color: #000000;
   }
 
-  &:active .copyright__text {
-    color: #f1f1f1;
+  &:hover  {
+    color: #8d8d8d;
+  }
+
+  &:hover .copyright__img {
+    fill: #46c1ae;
+  }
+
+  &:focus {
+    color: #8d8d8d;
+  }
+
+  &:focus .copyright__img {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
+
+  &:active .copyright__img{
+    color: #cacaca;
+    fill: #bde3dd;
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -27,4 +46,5 @@
 
 .copyright__img {
   display: block;
+  fill: #63d1bb;
 }

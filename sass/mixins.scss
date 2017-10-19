@@ -172,15 +172,17 @@
 }
 
 @mixin svg-hover {
-  &:hover .footer__hover {
+  fill: #231F20;
+
+  &:hover {
     fill: #46c1ae;
   }
 
-  &:focus .footer__hover {
+  &:focus {
     fill: #46c1ae;
   }
 
-  &:active .footer__hover {
+  &:active {
     fill: #bde3dd;
   }
 }

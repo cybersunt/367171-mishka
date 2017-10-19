@@ -6,15 +6,11 @@
   width: 100%;
   height: 100%;
   z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &--closed {
-    display: none;
-  }
+  display: none;
 
   &--opened {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
