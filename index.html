@@ -183,11 +183,8 @@
             </table>
             <div class="contacts__maps">
               <div class="contacts__maps-wrap">
-                <div class="contacts__map contacts__map--ymap hidden">
-                  <!-- Интерактивная карта -->
-                </div>
-                <div class="contacts__map contacts__map--img">
-                  <picture>
+                <div class="contacts__map" id="map">
+                  <picture class="contacts__map-img">
                     <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
                     <img class="contacts__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Адрес магазина">
@@ -281,5 +278,9 @@
       </section>
     </div>
   <script src="js/menu.js"></script>
+  <script>
+    document.querySelector(".contacts__map-img").classList.add("contacts__map-img--hidden");
+  </script>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A96bd645d2f75e4d191e2ef005e2f2041b6f754724e02d7514a9569e5d96464b4&amp;lang=ru_RU&amp;scroll=false&amp;id=map"></script>
   </body>
 </html>
