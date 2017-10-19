@@ -68,19 +68,23 @@
   &:hover {
     @include link-hover;
 
-    .user-list__path {
+    .user-list__icon {
       fill: #63d1bb;
     }
   }
 
   &:focus {
     @include link-hover;
+
+    .user-list__icon {
+      fill: #63d1bb;
+    }
   }
 
   &:active {
     @include link-active;
 
-    .user-list__path {
+    .user-list__icon {
       fill: #d0f1ea;
     }
   }
@@ -95,6 +99,7 @@
 .user-list__icon {
   display: inline-block;
   vertical-align: sub;
+  fill: #d3d2d2;
   margin-right: 21px;
 
   &--search {
