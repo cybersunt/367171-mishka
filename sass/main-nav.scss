@@ -151,14 +151,14 @@
     @include main-nav-toggle;
     width: 22px;
     height: 14px;
-    background-image: url("../img/icon-menu-open.svg");
+    background-image: url("../img/menu-open.svg");
   }
 
   .main-nav--opened .main-nav__toggle {
     @include main-nav-toggle;
     width: 22px;
     height: 22px;
-    background-image: url("../img/icon-menu-close.svg");
+    background-image: url("../img/menu-close.svg");
   }
 
   .main-nav--nojs .main-nav__toggle {
