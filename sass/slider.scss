@@ -1,0 +1,16 @@
+.slider__list {
+  display: flex;
+  position: relative;
+  transition: transform 0.8s ease;
+}
+
+.slider__item {
+  width: 680px;
+  transform: translate(0);
+}
+
+.slider__item--hidden {
+  display: none;
+  position: absolute;
+  transform: translate(680px);
+}

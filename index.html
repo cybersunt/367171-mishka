@@ -177,8 +177,18 @@
             <h2 class="reviews__title inner-page__title-second">Отзывы</h2>
             <div class="reviews__list slider__list">
               <blockquote class="reviews__item slider__item">
-                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!  </p>
+                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
                 <p class="reviews__author-name">Анастасия Красильникова</p>
+                <p class="reviews__author-nickname">@misssssiskras</p>
+              </blockquote>
+              <blockquote class="reviews__item slider__item slider__item--hidden">
+                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.</p>
+                <p class="reviews__author-name">Анастасия</p>
+                <p class="reviews__author-nickname">@misssssiskras</p>
+              </blockquote>
+              <blockquote class="reviews__item slider__item slider__item--hidden">
+                <p class="reviews__text">В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков! </p>
+                <p class="reviews__author-name">Настя Красильникова</p>
                 <p class="reviews__author-nickname">@misssssiskras</p>
               </blockquote>
               <div class="reviews__buttons">
@@ -292,30 +302,32 @@
       </div>
     </footer>
 
-    <div class="overlay inner-page__wrap inner-page__wrap--form hidden">
-      <section class="add-to-cart">
-        <h3 class="add-to-cart__title">Добавить в корзину</h3>
-        <form class="add-to-cart__form"  action="https://echo.htmlacademy.ru" method="post">
-          <span class="add-to-cart__text">Выберите размер:</span>
-          <div class="add-to-cart__wrap">
-            <label class="add-to-cart__label" tabindex="0">
-              <input class="add-to-cart__input" name="size" type="radio" value="S" checked>
-              <span class="add-to-cart__value">S</span>
-            </label>
-            <label class="add-to-cart__label" tabindex="0">
-              <input class="add-to-cart__input" name="size" type="radio" value="M">
-              <span class="add-to-cart__value">M</span>
-            </label>
-            <label class="add-to-cart__label" tabindex="0">
-              <input class="add-to-cart__input" name="size" type="radio" value="L">
-              <span class="add-to-cart__value">L</span>
-            </label>
-          </div>
-          <button class="btn add-to-cart__btn" type="submit">Добавить</button>
-        </form>
-      </section>
-    </div>
+    <div class="overlay"></div>
+    <section class="add-to-cart inner-page__wrap inner-page__wrap--form">
+      <h3 class="add-to-cart__title">Добавить в корзину</h3>
+      <form class="add-to-cart__form"  action="https://echo.htmlacademy.ru" method="post">
+        <span class="add-to-cart__text">Выберите размер:</span>
+        <div class="add-to-cart__wrap">
+          <label class="add-to-cart__label" tabindex="0">
+            <input class="add-to-cart__input" name="size" type="radio" value="S" checked>
+            <span class="add-to-cart__value">S</span>
+          </label>
+          <label class="add-to-cart__label" tabindex="0">
+            <input class="add-to-cart__input" name="size" type="radio" value="M">
+            <span class="add-to-cart__value">M</span>
+          </label>
+          <label class="add-to-cart__label" tabindex="0">
+            <input class="add-to-cart__input" name="size" type="radio" value="L">
+            <span class="add-to-cart__value">L</span>
+          </label>
+        </div>
+        <button class="btn add-to-cart__btn" type="submit">Добавить</button>
+      </form>
+    </section>
+
   <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/slider.js"></script>
   <script>
     document.querySelector(".contacts__map-img").classList.add("contacts__map-img--hidden");
   </script>

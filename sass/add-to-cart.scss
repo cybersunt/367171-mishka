@@ -3,16 +3,27 @@
   box-shadow: $box-shadow;
   border: 1px solid #c6c6c6;
   background-color: #ffffff;
+
   width: 570px;
   height: 340px;
   padding-top: 40px;
   padding-bottom: 46px;
-  margin: 0 auto;
+  margin-left: -290px;
+  margin-right: -170px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  margin-top: 1000px;
   z-index: 9999;
+  display: none;
 
   @media screen and (min-width: $tablet-width) {
     @include reset-padding;
     padding: 34px 100px 50px;
+  }
+
+  &--opened {
+    display: block;
   }
 }
 
