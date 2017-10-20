@@ -15,7 +15,7 @@ if (location.pathname === '/index.html' || location.pathname === '/') {
 } else if (location.pathname === '/catalog.html') {
   var openModalBtn = document.querySelectorAll('.goods__add-to-cart');
 
-   for (var i = 0; i < openModalBtn.length; i++) {
+    for (var i = 0; i < openModalBtn.length; i++) {
     openModalBtn[i].addEventListener("click", openPopup);
   }
 }
