@@ -172,6 +172,7 @@
 }
 
 @mixin svg-hover {
+fill: #231f20;
 
   &:hover {
     fill: #46c1ae;
