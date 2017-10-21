@@ -7,6 +7,7 @@
   @media screen and (min-width: $tablet-width) {
     min-height: 750px;
     margin-top: -62px;
+    margin-bottom: 41px;
     background-image: none;
   }
 
@@ -18,24 +19,10 @@
 .promo__wrap {
   @include wrapper;
   @include container;
-
-  @media screen and (min-width: $desktop-width) {
-    padding: 0 100px;
-  }
-}
-
-.promo__name {
-  box-sizing: $box-sizing;
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -19px;
-  padding-top: 70px;
-  padding-bottom: 0;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 0;
-  min-height: 281px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -43,27 +30,45 @@
   }
 
   @media screen and (min-width: $tablet-width) {
-    @include reset-padding;
-    min-height: 627px;
-    padding-top: 153px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center 0;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-tablet@2x.jpg");
+    background-size: 668px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 100px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: center -2px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-desktop@2x.jpg");
     background-size: 1150px;
+  }
+}
+
+.promo__name {
+  box-sizing: $box-sizing;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 0;
+  min-height: 281px;
+
+  @media screen and (min-width: $tablet-width) {
+    @include reset-padding;
+    min-height: 627px;
+    padding-top: 154px;
   }
 
   @media screen and (min-width: $desktop-width) {
     padding-left: 100px;
     padding-right: 100px;
-    background-image: url("../img/hero-desktop@1x.jpg");
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 1150px;
   }
 }
 
@@ -87,7 +92,7 @@
   justify-content: flex-end;
 
   @media screen and (min-width: $tablet-width) {
-    min-height: 106px;
+    min-height: 121px;
     margin: 0;
   }
 
@@ -107,6 +112,28 @@
 
   @media screen and (min-width: $tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &::after {
+    @media screen and (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      z-index: 1;
+      width: 100%;
+      height: 34px;
+      background: url("../img/bg-zigzag-fill.svg") repeat -10px 0;
+      background-repeat-y: no-repeat;
+      background-size: auto 60%;
+      bottom: -20px;
+      left: 0;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      background-position: 7px 0;
+      background-size: auto 100%;
+      top: 100px;
+    }
   }
 }
 
@@ -120,12 +147,13 @@
   padding-top: 25px;
   padding-left: 30px;
   padding-right: 125px;
+  padding-bottom: 20px;
   position: relative;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size (20px, 30px);
     width: 50%;
-    min-height: 115px;
+    min-height: 121px;
     padding-top: 28px;
     padding-left: 36px;
   }
@@ -134,6 +162,10 @@
     min-height: 115px;
     padding-right: 305px;
     padding-bottom: 13px;
+
+    &:hover {
+      min-height: 121px;
+    }
   }
 
   &:hover {
@@ -161,72 +193,35 @@
   }
 
   &::after {
-    position: absolute;
-    content: "";
-    z-index: 1;
-
-    @media (max-width: $mobile-width-only) {
+    @media screen and (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      z-index: 1;
       background-position: 5px 0;
-    }
-
-    @media screen and (min-width: $tablet-width) {
-      width: 100%;
-      height: 34px;
-      background: url("../img/bg-zigzag-fill.svg") repeat -20px 0;
-      background-repeat-y: no-repeat;
-      background-size: auto 50%;
-      bottom: -20px;
-      left: 0;
-    }
-
-    @media screen and (min-width: $desktop-width) {
-      background-position: 4px 0;
-      background-size: auto 100%;
     }
   }
 
   &:hover::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    left: 0;
-    z-index: 1;
-
-    @media (max-width: $mobile-width-only) {
+    @media screen and (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      width: 100%;
+      left: 0;
+      z-index: 1;
       height: 5px;
       bottom: -5px;
-    }
-
-    @media screen and (min-width: $tablet-width) {
-      height: 34px;
-      background: url("../img/bg-zigzag-fill.svg") no-repeat -20px 0;
-      background-repeat-y: no-repeat;
-      background-size: auto 50%;
-      bottom: -20px;
-    }
-
-    @media screen and (min-width: $desktop-width) {
-      background-position: 4px 0;
-      background-size: auto 100%;
     }
   }
 
   &:focus::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    left: 0;
-    z-index: 1;
-
-    @media (max-width: $mobile-width-only) {
+    @media screen and (max-width: $mobile-width-only) {
+      position: absolute;
+      content: "";
+      width: 100%;
+      left: 0;
+      z-index: 1;
       height: 5px;
       bottom: -5px;
-    }
-
-    @media screen and (min-width: $tablet-width) {
-      height: 34px;
-      background: url("../img/bg-zigzag-fill.svg") no-repeat -5px 0;
-      bottom: -20px;
     }
   }
 }
@@ -241,7 +236,7 @@
     content: "";
     width: 40px;
     height: 62px;
-    background-image: url("../img/icon-interior.svg");
+    background-image: url("../img/interior.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     opacity: 0.5;
@@ -258,7 +253,7 @@
   }
 
   &:focus::after {
-    @media (max-width: $mobile-width-only) {
+    @media screen and (max-width: $mobile-width-only) {
       background-color: #63d1bb;
     }
   }
@@ -275,7 +270,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-image: url("../img/icon-toy.svg");
+    background-image: url("../img/toy.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     opacity: 0.5;
@@ -287,13 +282,13 @@
   }
 
   &:hover::after {
-    @media (max-width: $mobile-width-only) {
+    @media screen and (max-width: $mobile-width-only) {
       background-color: #56c3b2;
     }
   }
 
   &:focus::after {
-    @media (max-width: $mobile-width-only) {
+    @media screen and (max-width: $mobile-width-only) {
       background-color: #56c3b2;
     }
   }

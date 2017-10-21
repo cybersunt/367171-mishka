@@ -1,4 +1,7 @@
 .menu-list {
+  position: relative;
+  z-index: 1;
+
   @media screen and (min-width: $tablet-width) {
     order: 1;
     justify-content: space-between;

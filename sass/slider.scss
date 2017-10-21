@@ -1,0 +1,25 @@
+.slider__list {
+  position: relative;
+  transition: transform 0.8s ease;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.slider__item {
+  @media screen and (min-width: $tablet-width) {
+    width: 680px;
+    transform: translate(0);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 770px;
+  }
+}
+
+.slider__item--hidden {
+  display: none;
+  position: absolute;
+  transform: translate(680px);
+}

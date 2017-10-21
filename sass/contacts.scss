@@ -58,7 +58,7 @@
   @media screen and (min-width: $tablet-width) {
     @include reset-padding;
     @include text-size(43px, 50px);
-    margin-bottom: 45px;
+    margin-bottom: 46px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -174,7 +174,7 @@
   margin-bottom: 38px;
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 53px;
+    margin-bottom: 56px;
   }
 
   @media screen and (min-width: $desktop-width) {

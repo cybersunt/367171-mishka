@@ -4,7 +4,6 @@
 
   @media screen and (min-width: $tablet-width) {
     @include reset-padding;
-    @include vert-padding (112px, 0);
     margin-bottom: 53px;
   }
 
@@ -18,6 +17,7 @@
   @include wrapper;
   @include container;
   @include grid-col-row;
+  flex-wrap: wrap;
   position: relative;
 
   @media screen and (min-width: $desktop-width) {
@@ -29,6 +29,7 @@
   @include container;
   @include text-size (25px, 30px);
   @include text-color (#000000);
+  box-sizing: $box-sizing;
   width: 260px;
   margin-bottom: 23px;
   display: flex;
@@ -38,17 +39,17 @@
   @media screen and (min-width: $tablet-width) {
     @include text-size(43px, 50px);
     @include reset-padding;
+    padding-bottom: 20px;
     flex-direction: row;
     align-items: center;
-    position: absolute;
-    margin-bottom: 0;
-    top: -98px;
+    position: relative;
     width: 668px;
-    left: 46px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: $desktop-width) {
     @include text-size (53px, 57px);
+    position: absolute;
     top: 52px;
     left: 76px;
     z-index: 1;
@@ -73,7 +74,7 @@
   @media screen and (min-width: $tablet-width) {
     @include text-size(17px, 17px);
     text-align: center;
-    width: 117px;
+    width: 124px;
     padding-top: 5px;
   }
 
