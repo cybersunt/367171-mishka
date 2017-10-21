@@ -79,9 +79,11 @@
 
 .reviews__text {
   @include reset-margin;
+  min-height: 270px;
   margin-bottom: 27px;
 
   @media screen and (min-width: $tablet-width) {
+    min-height: 120px;
     margin-bottom: 56px;
   }
 

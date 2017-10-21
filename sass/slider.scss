@@ -1,12 +1,17 @@
 .slider__list {
-  display: flex;
   position: relative;
   transition: transform 0.8s ease;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .slider__item {
-  width: 680px;
-  transform: translate(0);
+  @media screen and (min-width: $tablet-width) {
+    width: 680px;
+    transform: translate(0);
+  }
 }
 
 .slider__item--hidden {

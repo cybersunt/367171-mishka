@@ -57,9 +57,10 @@
 
 .goods__info {
   box-sizing: $box-sizing;
+  border: $border;
   padding: 27px 27px 0;
   min-height: 180px;
-  width: 260px;
+  width: 264px;
   display: flex;
   flex-direction: column;
 

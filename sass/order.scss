@@ -114,12 +114,12 @@
   }
 
   &::placeholder {
-    @include text-size(17px, 18px);
+    @include text-size(17px, 52px);
     font-family: "Open Sans", "Arial", sans-serif;
     color: rgba(68, 68, 68, 0.3);
 
     @media screen and (min-width: $tablet-width) {
-      @include text-size(19px, 18px);
+      @include text-size(19px, 52px);
     }
   }
 
