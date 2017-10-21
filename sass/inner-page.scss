@@ -25,21 +25,20 @@
   box-sizing: $box-sizing;
   border-top: $border;
   min-height: 175px;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   background-color: #f1f1f1;
   position: relative;
 
   @media screen and (min-width: $tablet-width) {
-    @include reset-padding;
     min-height: 245px;
     padding-top: 94px;
     margin-top: -62px;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
   }
 
   @media screen and (min-width: $desktop-width) {
     min-height: 272px;
-    margin-bottom: 112px;
+    margin-bottom: 110px;
   }
 
   &--form {
