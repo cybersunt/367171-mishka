@@ -56,15 +56,15 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("html", function() {
-  return gulp.src("*html")
+  return gulp.src("*.html")
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "images", "sprite", "webp", done);
+  run("clean", "copy", "style", "images", "sprite", "html", "webp", done);
 });
 
 gulp.task("copy", function() {
