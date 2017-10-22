@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script>
       // Picture element HTML5 shiv
@@ -39,8 +39,8 @@
           <ul class="main-nav__list user-list">
             <li class="user-list__item user-list__item--search">
               <a class="user-list__link user-list__link--search" href="#">
-                <svg class="user-list__icon" width="18" height="18" aria-labelledby="title">
-                  <title>Поиск по сайту</title>
+                <svg class="user-list__icon" width="18" height="18" aria-labelledby="title__search">
+                  <title id="title__search">Поиск по сайту</title>
                   <use xlink:href="#icon-search"></use>
                 </svg>
                 Поиск по сайту
@@ -48,8 +48,8 @@
             </li>
             <li class="user-list__item user-list__item--cart">
               <a class="user-list__link" href="#">
-                <svg class="user-list__icon  user-list__icon--cart" width="20px" height="19px"  aria-labelledby="title">
-                  <title>Добавить в корзину</title>
+                <svg class="user-list__icon  user-list__icon--cart" width="20px" height="19px"  aria-labelledby="title__cart">
+                  <title id="title__cart">Добавить в корзину</title>
                   <use xlink:href="#icon-cart"></use>
                 </svg>
                 Корзина: пока пуста
@@ -176,8 +176,8 @@
               <img class="video__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
             </picture>
             <button  class="video__start-btn" type="button">
-              <svg aria-labelledby="title" version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101px" height="77px" viewBox="247.3 382.56 100.678 76.891" enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
-                <title>Процесс производства </title>
+              <svg aria-labelledby="title__video" version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101px" height="77px" viewBox="247.3 382.56 100.678 76.891" enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
+                <title id="title__video">Процесс производства </title>
                 <g>
                   <g>
                     <path class="video__start-btn-fill" fill="#63D1BB" d="M344.255,400.708c0,0-0.92-7.008-3.785-10.078c-3.632-4.041-7.674-4.066-9.541-4.297 c-13.326-1.023-33.303-1.023-33.303-1.023h-0.051c0,0-19.978,0-33.304,1.023c-1.867,0.23-5.908,0.256-9.54,4.297 c-2.84,3.096-3.786,10.078-3.786,10.078s-0.896,8.211-0.896,16.422v7.699c0,8.21,0.947,16.421,0.947,16.421 s0.921,7.009,3.785,10.078c3.632,4.041,8.364,3.913,10.487,4.349c7.622,0.767,32.356,1.022,32.356,1.022 s20.003-0.025,33.329-1.048c1.867-0.23,5.908-0.256,9.54-4.298c2.84-3.069,3.786-10.078,3.786-10.078s0.946-8.21,0.946-16.421 v-7.699C345.202,408.919,344.255,400.708,344.255,400.708z"/>
@@ -205,8 +205,8 @@
     <footer class="footer">
       <div class="footer__wrap inner-page__wrap">
         <a class="footer__logo" href="index.html">
-          <svg class="footer__logo-image" width="102" height="34" aria-labelledby="title">
-            <title>Мишка</title>
+          <svg class="footer__logo-image" width="102" height="34" aria-labelledby="title__logo-mishka">
+            <title id="title__logo-mishka">Мишка</title>
             <use xlink:href="#icon-logo"></use>
           </svg>
         </a>
@@ -214,8 +214,8 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://instagram.com">
-                <svg class="social__icon" width="22px" height="21" aria-labelledby="title">
-                  <title>Мы в Instagram</title>
+                <svg class="social__icon" width="22px" height="21" aria-labelledby="title__instagram">
+                  <title id="title__instagram">Мы в Instagram</title>
                   <use xlink:href="#icon-insta"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Instagram</span>
@@ -223,8 +223,8 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="https://facebook.com">
-                <svg class="social__icon" width="15px" height="28px" aria-labelledby="title">
-                  <title>Мы в Facebook</title>
+                <svg class="social__icon" width="15px" height="28px" aria-labelledby="title__facebook">
+                  <title id="title__facebook">Мы в Facebook</title>
                   <use xlink:href="#icon-fb"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Facebook</span>
@@ -232,8 +232,8 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="https://twitter.com">
-                <title>Мы в Twitter</title>
-                <svg class="social__icon" width="23.5px" height="20px">
+                <svg class="social__icon" width="23.5px" height="20px" aria-labelledby="title__twitter">
+                  <title id="title__twitter">Мы в Twitter</title>
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Twitter</span>
@@ -243,8 +243,8 @@
         </div>
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано:</span>
-          <svg class="copyright__img" width="27px" height="34px" aria-labelledby="title">
-            <title>Логотип htmlacademy</title>
+          <svg class="copyright__img" width="27px" height="34px" aria-labelledby="title__logo-htmlacademy">
+            <title id="title__logo-htmlacademy">Логотип htmlacademy</title>
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy</span>

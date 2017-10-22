@@ -28,32 +28,32 @@
               <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
             </picture>
           </div>
-            <ul class="main-nav__list menu-list">
-              <li class="menu-list__item"><a class="menu-list__link" href="catalog.html">Каталог товаров</a></li>
-              <li class="menu-list__item"><a class="menu-list__link" href="form.html">Вязание на заказ</a></li>
-              <li class="menu-list__item menu-list__item--hidden"><a class="menu-list__link" href="#">Новые поступления</a></li>
-              <li class="menu-list__item menu-list__item--hidden"><a class="menu-list__link" href="#">Распродажа</a></li>
-            </ul>
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item user-list__item--search">
-                <a class="user-list__link user-list__link--search" href="#">
-                  <svg class="user-list__icon" width="18" height="18" aria-labelledby="title">
-                    <title>Поиск по сайту</title>
-                    <use xlink:href="#icon-search"></use>
-                  </svg>
-                  Поиск по сайту
-                </a>
-              </li>
-              <li class="user-list__item user-list__item--cart">
-                <a class="user-list__link" href="#">
-                  <svg class="user-list__icon  user-list__icon--cart" width="20px" height="19px"  aria-labelledby="title">
-                    <title>Добавить в корзину</title>
-                    <use xlink:href="#icon-cart"></use>
-                  </svg>
-                  Корзина: пока пуста
-                </a>
-              </li>
-            </ul>
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item"><a class="menu-list__link" href="catalog.html">Каталог товар</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="form.html">Вязание на заказ</a></li>
+            <li class="menu-list__item menu-list__item--hidden"><a class="menu-list__link" href="#">Новые поступления</a></li>
+            <li class="menu-list__item menu-list__item--hidden"><a class="menu-list__link" href="#">Распродажа</a></li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item user-list__item--search">
+              <a class="user-list__link user-list__link--search" href="#">
+                <svg class="user-list__icon" width="18" height="18" aria-labelledby="title__search">
+                  <title id="title__search">Поиск по сайту</title>
+                  <use xlink:href="#icon-search"></use>
+                </svg>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="user-list__item user-list__item--cart">
+              <a class="user-list__link" href="#">
+                <svg class="user-list__icon  user-list__icon--cart" width="20px" height="19px"  aria-labelledby="title__cart">
+                  <title id="title__cart">Добавить в корзину</title>
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
           <span class="main-nav__note">Бесплатная доставка по России</span>
         </nav>
       </div>
@@ -159,15 +159,15 @@
               </blockquote>
               <div class="reviews__buttons">
                 <button class="reviews__prev" type="button">
-                  <svg aria-labelledby="title" class="reviews__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                    <title>Предыдущий отзыв</title>
+                  <svg aria-labelledby="title__btn-prev" class="reviews__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                    <title id="title__btn-prev">Предыдущий отзыв</title>
                     <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
                   </svg>
                   <span class="visually-hidden">Предыдущий отзыв</span>
                 </button>
                 <button class="reviews__next" type="button">
-                  <svg aria-labelledby="title" class="reviews__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                    <title>Следующий отзыв</title>
+                  <svg aria-labelledby="title__btn-next" class="reviews__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                    <title id="title__btn-next">Следующий отзыв</title>
                     <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
                   </svg>
                   <span class="visually-hidden">Следующий отзыв</span>
@@ -226,8 +226,8 @@
     <footer class="footer">
       <div class="footer__wrap inner-page__wrap">
         <div class="footer__logo footer__logo--nolink">
-          <svg class="footer__logo-image" width="102" height="34" aria-labelledby="title">
-            <title>Мишка</title>
+          <svg class="footer__logo-image" width="102" height="34" aria-labelledby="title__logo-mishka">
+            <title id="title__logo-mishka">Мишка</title>
             <use xlink:href="#icon-logo"></use>
           </svg>
         </div>
@@ -235,8 +235,8 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://instagram.com">
-                <svg class="social__icon" width="22px" height="21" aria-labelledby="title">
-                  <title>Мы в Instagram</title>
+                <svg class="social__icon" width="22px" height="21" aria-labelledby="title__instagram">
+                  <title id="title__instagram">Мы в Instagram</title>
                   <use xlink:href="#icon-insta"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Instagram</span>
@@ -244,8 +244,8 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="https://facebook.com">
-                <svg class="social__icon" width="15px" height="28px" aria-labelledby="title">
-                  <title>Мы в Facebook</title>
+                <svg class="social__icon" width="15px" height="28px" aria-labelledby="title__facebook">
+                  <title id="title__facebook">Мы в Facebook</title>
                   <use xlink:href="#icon-fb"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Facebook</span>
@@ -253,8 +253,8 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="https://twitter.com">
-                <title>Мы в Twitter</title>
-                <svg class="social__icon" width="23.5px" height="20px">
+                <svg class="social__icon" width="23.5px" height="20px" aria-labelledby="title__twitter">
+                  <title id="title__twitter">Мы в Twitter</title>
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Twitter</span>
@@ -264,8 +264,8 @@
         </div>
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано:</span>
-          <svg class="copyright__img" width="27px" height="34px" aria-labelledby="title">
-            <title>Логотип htmlacademy</title>
+          <svg class="copyright__img" width="27px" height="34px" aria-labelledby="title__logo-htmlacademy">
+            <title id="title__logo-htmlacademy">Логотип htmlacademy</title>
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy</span>
