@@ -263,12 +263,17 @@
 }
 
 .order__btn {
+  @include text-size(17px, 16px);
   width: 100%;
 
   @media screen and (min-width: $tablet-width) {
-    width: 231px;
-    padding: 14px 24px;
+    min-width: 231px;
+    padding: 15px 20px;
     order: -1;
     margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 17px 30px;
   }
 }

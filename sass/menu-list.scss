@@ -1,7 +1,4 @@
 .menu-list {
-  position: relative;
-  z-index: 1;
-
   @media screen and (min-width: $tablet-width) {
     order: 1;
     justify-content: space-between;
@@ -19,7 +16,7 @@
   @include text-decoration;
   @include mobile-menu-item;
   padding-top: 25px;
-  padding-left: 76px;
+  padding-left: 70px;
 
   @media screen and (min-width: $tablet-width) {
     @include text-size(15px, 24px);

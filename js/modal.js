@@ -1,19 +1,19 @@
 // Модальное окно
-var overlay = document.querySelector('.overlay');
-var popup = document.querySelector('.add-to-cart');
-var buttonAdd = document.querySelector('.add-to-cart__btn');
-var chekedRadio = document.querySelectorAll('.add-to-cart__label')[0];
+var overlay = document.querySelector(".overlay");
+var popup = document.querySelector(".add-to-cart");
+var buttonAdd = document.querySelector(".add-to-cart__btn");
+var chekedRadio = document.querySelectorAll(".add-to-cart__label")[0];
 
 buttonAdd.addEventListener("click", closePopup);
 overlay.addEventListener("click", closePopup);
 
-if (location.pathname === '/index.html' || location.pathname === '/') {
+if (location.pathname === "/index.html" || location.pathname === "/") {
   var openPopupBtn = document.querySelector(".product__btn");
 
   openPopupBtn.addEventListener("click", openPopup);
 
-} else if (location.pathname === '/catalog.html') {
-  var openModalBtn = document.querySelectorAll('.goods__add-to-cart');
+} else if (location.pathname === "/catalog.html") {
+  var openModalBtn = document.querySelectorAll(".goods__add-to-cart");
 
     for (var i = 0; i < openModalBtn.length; i++) {
     openModalBtn[i].addEventListener("click", openPopup);
@@ -22,7 +22,7 @@ if (location.pathname === '/index.html' || location.pathname === '/') {
 
 function openPopup (evt) {
   evt.preventDefault();
-  var overlay = document.querySelector('.overlay');
+  var overlay = document.querySelector(".overlay");
   overlay.classList.add("overlay--opened");
   popup.classList.add("add-to-cart--opened");
   chekedRadio.focus();
@@ -30,7 +30,7 @@ function openPopup (evt) {
 
 function closePopup (evt) {
   evt.preventDefault();
-  var overlay = document.querySelector('.overlay');
+  var overlay = document.querySelector(".overlay");
   overlay.classList.remove("overlay--opened");
   popup.classList.remove("add-to-cart--opened");
 }
