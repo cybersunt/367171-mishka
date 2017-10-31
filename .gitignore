@@ -7,7 +7,6 @@
 *.htm
 *.sublime*
 css/*.css
-build/
 bg/
 node_modules/
 npm-debug.*
