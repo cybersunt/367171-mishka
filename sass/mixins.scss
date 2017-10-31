@@ -123,20 +123,6 @@
   padding-left: 220px;
 }
 
-@mixin grid-direction {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: $tablet-width) {
-    flex-direction: row;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    flex-direction: column;
-  }
-}
-
 @mixin grid-col-row {
   display: flex;
   flex-direction: column;
