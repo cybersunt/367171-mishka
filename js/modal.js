@@ -2,15 +2,16 @@ var overlay = document.querySelector(".overlay");
 var popup = document.querySelector(".add-to-cart");
 var buttonAdd = document.querySelector(".add-to-cart__btn");
 var chekedRadio = document.querySelectorAll(".add-to-cart__label")[0];
+var page = document.querySelector(".inner-page");
 
 buttonAdd.addEventListener("click", closePopup);
 overlay.addEventListener("click", closePopup);
 
-if (location.pathname === "/index.html" || location.pathname === "/") {
+if (page.classList.contains("inner-page--index")) {
   var openPopupBtn = document.querySelector(".product__btn");
   openPopupBtn.addEventListener("click", openPopup);
 
-} else if (location.pathname === "/catalog.html") {
+} else if (page.classList.contains("inner-page--catalog")) {
   var openModalBtn = document.querySelectorAll(".goods__add-to-cart");
 
     for (var i = 0; i < openModalBtn.length; i++) {
