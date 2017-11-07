@@ -1,4 +1,3 @@
-// Модальное окно
 var overlay = document.querySelector(".overlay");
 var popup = document.querySelector(".add-to-cart");
 var buttonAdd = document.querySelector(".add-to-cart__btn");
@@ -9,7 +8,6 @@ overlay.addEventListener("click", closePopup);
 
 if (location.pathname === "/index.html" || location.pathname === "/") {
   var openPopupBtn = document.querySelector(".product__btn");
-
   openPopupBtn.addEventListener("click", openPopup);
 
 } else if (location.pathname === "/catalog.html") {
